@@ -93,6 +93,6 @@ $$
 \begin{split}
 R(h) &=\Pr_{a\sim D}[h(a)\neq c(a)]\\
 & =\Pr_{a\sim D}[c(a)=1 \text{ และมี } z\in h \text{ บางตัวที่ } z=0 \text{ ใน } a]\\
-\leq \sum_{z\in h} p(z)
+&\leq \sum_{z\in h} p(z)
 \end{split}
 $$

@@ -133,8 +133,12 @@ $$
 m\geq \frac{2n}{\epsilon}\ln\frac{2n}{\delta}
 $$
 
-นั่นคือ เราจะสามารถหา conjunction ที่มี error ไม่เกิน $\epsilon$ โดยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ ได้เมื่อมีตัวอย่างข้อมูลอย่างน้อยเป็นจำนวน $\frac{2n}{\epsilon}\ln\frac{2n}{\delta}$
-หรือเราสามารถสรุปในมุมของ generalization error ได้ว่า
+นั่นคือ เราจะสามารถหา conjunction ที่มี error ไม่เกิน $\epsilon$ โดยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ ได้เมื่อมีตัวอย่างข้อมูลเป็นจำนวนอย่างน้อย $\frac{2n}{\epsilon}\ln\frac{2n}{\delta}$
+ซึ่งจะเห็นว่า sample complexity นี้เป็น polynomial บน $1/\epsilon, 1/\delta, n $ และ $size(c)$
+ดังนั้นเราจึงสรุปได้ว่าปัญหาการเรียนรู้ boolean conjunction นี้สามารถเรียนรู้ได้อย่างมีประสิทธิภาพ
+
+
+ในมุมของ generalization error เราก็สามารถสรุปได้ว่า
 สำหรับจำนวนตัวอย่างข้อมูล $m$ เราจะมีความน่าจะเป็นไม่น้อยกว่า $1-\delta$ ที่จะได้ hypothesis $h$ ที่
 
 $$

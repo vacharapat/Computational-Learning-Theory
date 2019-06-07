@@ -90,7 +90,7 @@ $(a, 0)$ โดย $a$ มีบิตที่ $i$ และ $j$ เป็น 0
 ตัวอย่างเช่น กราฟต่อไปนี้จะสามารถนำมาสร้างตัวอย่างข้อมูลได้ตามตารางด้านล่าง
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Adversarial-Machine-Learning/master/images/3color1.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/3color1.png">
 </p>
 
 | example | label | example | label |

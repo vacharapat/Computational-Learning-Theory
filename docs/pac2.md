@@ -4,14 +4,14 @@
 ในหัวข้อนี้เราจะมาดูตัวอย่างปัญหาการเรียนรู้หนึ่งซึ่งมีอัลกอริทึมที่สามารถเรียนรู้ได้อย่างมีประสิทธิภาพตาม PAC-framework โดยในปัญหานี้ เราให้ $X$ เป็นเซตของจุดทั้งหมดในระนาบ นั่นคือ $X=\mathbb{R}^2$ และ concept class $C$ ของเราแทนเซตของรูปสี่เหลี่ยมผืนผ้าทั้งหมดที่มีด้านขนานกับแกนของระนาบ โดยสำหรับ รูปสี่เหลี่ยมของ concept $c$ ใด ๆ เราจะให้ $c(x)=1$ ถ้า $x$ เป็นจุดที่อยู่ภายในรูปสี่เหลี่ยมนั้น และ $c(x)=0$ ถ้า $x$ อยู่ภายนอก ปัญหาของเราคือต้องการหารูปสี่เหลี่ยมที่ใกล้เคียงกับ $c$ โดยเรียนรู้จากตัวอย่างข้อมูล รูปด้านล่างนี้แสดงตัวอย่างรูปสี่เหลี่ยม $r$ ที่เป็น concept เป้าหมาย และตัวอย่างข้อมูลโดยจุดดำแสดงตัวอย่างข้อมูลที่มี label เป็น 1 และจุดขาวเป็นข้อมูลที่มี label เป็น 0
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Adversarial-Machine-Learning/master/images/rec1.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec1.png">
 </p>
 
 ## อัลกอริทึมการเรียนรู้
 อัลกอริทึมหนึ่งที่สามารถเรียนรู้รูปสี่เหลี่ยม $r$ ได้ง่าย มีการทำงานดังนี้ เมื่อได้รับตัวอย่างข้อมูล $$S=\{(x_1,y_1),\dots,(x_m,y_m)\}$$ อัลกอริทึมเราจะคืนคำตอบเป็นรูปสี่เหลี่ยมที่เล็กที่สุดที่ครอบคลุมตัวอย่างข้อมูล $x_i$ ทั้งหมดที่ $y_i=1$ ตัวอย่างผลของอัลกอริทึมคือรูปสี่เหลี่ยม $h$ ที่แสดงในรูปด้านล่างนี้
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Adversarial-Machine-Learning/master/images/rec2.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec2.png">
 </p>
 
 ## การวิเคราะห์ sample complexity
@@ -19,7 +19,7 @@
 สมมติให้ $t_1,t_2,t_3,t_4$ เป็นพื้นที่ที่ลากจากขอบด้านหนึ่งของรูปสี่เหลี่ยมเป้าหมาย $r$ เข้ามาด้านในให้มีความน่าจะเป็นที่จะสุ่มหยิบข้อมูลได้ภายในพื้นที่นั้นเท่ากับ $\epsilon/4$ พอดี (พื้นที่สีเทาในรูปด้านล่างแสดงตัวอย่างของพื้นที่ดังกล่าวที่ลากจากขอบด้านซ้ายของ $r$ เข้ามา)
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Adversarial-Machine-Learning/master/images/rec3.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec3.png">
 </p>
 
 เราจะได้ว่า

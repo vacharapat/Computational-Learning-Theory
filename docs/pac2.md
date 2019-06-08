@@ -72,4 +72,5 @@ $$
 
 ----
 Prev: [ปัญหาการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac1)
+
 Next: [ปัญหาการเรียนรู้ boolean conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)

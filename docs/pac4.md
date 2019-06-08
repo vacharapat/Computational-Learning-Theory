@@ -90,7 +90,7 @@ $(e(i,j), 0)$ โดย $e(i,j)$ มีบิตที่ $i$ และ $j$ เ�
 ตัวอย่างเช่น กราฟต่อไปนี้จะสามารถนำมาสร้างตัวอย่างข้อมูลได้ตามตารางด้านล่าง
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/3color1.png">
+<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/3color1.png">
 </p>
 
 | example | label | example | label |

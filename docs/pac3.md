@@ -143,3 +143,7 @@ $$
 $$
 R(h)\leq \frac{2n}{m}\ln\frac{2n}{\delta}
 $$
+----
+Prev: [ปัญหาการเรียนรู้รูปสี่เหลี่ยมขนานแกน](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac2)
+
+Next: [ปัญหาที่เรียนรู้ยาก](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac4)

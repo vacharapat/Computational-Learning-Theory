@@ -119,7 +119,7 @@ $T_R\lor T_B\lor T_Y$ เป็นจริงได้ ในขณะที่
 ภาพด้านล่างแสดงตัวอย่างการระบายสีบน $G$ และ conjunction $T_R,T_B,T_Y$
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/3color2.png">
+<img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/3color2.png">
 </p>
 
 ในทางตรงข้าม สมมติให้มี 3-term DNF $T_1\lor T_2\lor T_3$ ที่สอดคล้องกับ $S_G$

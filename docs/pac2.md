@@ -71,6 +71,6 @@ R(h)\leq \frac{4}{m}\ln\frac{4}{\delta}
 $$
 
 ----
-Prev: [ปัญหาการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac1)
+Prev: [กรอบการเรียนรู้แบบ Probably Approximately Correct](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac1)
 
 Next: [ปัญหาการเรียนรู้ boolean conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)

@@ -103,7 +103,7 @@ $$
 R(h)\leq \sum_{z\in h} p(z)\leq 2n (\epsilon/2n) = \epsilon
 $$
 
-นั่นคือเราจะได้ hypothesis $h$ ที่มี error ไม่เกิน $epsilon$ ตามต้องการ
+นั่นคือเราจะได้ hypothesis $h$ ที่มี error ไม่เกิน $\epsilon$ ตามต้องการ
 
 คราวนี้สมมติว่ามี literal $z$ ที่ $p(z)>\epsilon/2n$ เราจะมาวิเคราะห์ว่ามีความน่าจะเป็นมากน้อยแค่ไหนที่ $z$ จะยังเหลืออยู่ใน $h$
 

@@ -66,4 +66,4 @@ $y_{u,v,w}$ และให้ตัวอย่างข้อมูลหล�
 ----
 Prev: [ปัญหาที่เรียนรู้ยาก](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac4)
 
-Next:
+Next: [Consistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite1)

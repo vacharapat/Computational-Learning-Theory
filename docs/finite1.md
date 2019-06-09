@@ -78,4 +78,4 @@ $$
 ----
 Prev: [Representation และประสิทธิภาพในการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac5)
 
-Next:
+Next: [การปรับปรุงการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite2)

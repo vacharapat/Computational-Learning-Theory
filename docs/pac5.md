@@ -14,13 +14,19 @@ $$
 สำหรับ 3-term DNF $T_1\lor T_2\lor T_3$ ใด ๆ เราจะสามารถจัดให้อยู่ในรูปของ 3-CNF ได้ดังนี้
 
 $$
-T_1\lor T_2\lor T_3 = \bigwedge_{u\in T_1\\v_in T_2\\w\in T_3}(u\lor v\lor w)
+T_1\lor T_2\lor T_3 = \bigwedge_{u\in T_1,\\v\in T_2,\\w\in T_3}(u\lor v\lor w)
 $$
 
 ตัวอย่างเช่น 3-term DNF
 
 $$
-(x_1\land \bar{x}_2)\lor (x_2\land x_3\land x_4)\lor (\bar{x}_1\land x_4)
+(x_1)\lor (x_2\land \bar{x}_3\land x_4)\lor (\bar{x}_1\land x_4)
 $$
 
 จะสามารถเขียนในรูป 3-CNF ได้เป็น
+
+$$
+(x_1\lor x_2\lor \bar{x}_1)\land (x_1\lor x_2\lor x_4)\land
+(x_1\lor \bar{x}_3\lor\bar{x}_1)\land (x_1\lor \bar{x}_3\lor x_4)\land
+(x_1\lor x_4\lor \bar{x}_1)\land (x_1\lor x_4\lor x_4)
+$$

@@ -4,3 +4,6 @@
 1. [ปัญหาการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)
 1. [ปัญหาที่เรียนรู้ยาก](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac4)
 1. [Representation และประสิทธิภาพในการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac5)
+
+### Hypothesis Space ที่มีขนาดจำกัด
+1. [Consistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite1)

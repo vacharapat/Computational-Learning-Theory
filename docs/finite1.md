@@ -74,3 +74,8 @@ $$
 $$
 R(h)\leq \frac{1}{m}(n\log 3+\log\frac{1}{\delta})
 $$
+
+----
+Prev: [Representation และประสิทธิภาพในการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac5)
+
+Next: 

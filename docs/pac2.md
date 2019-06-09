@@ -73,4 +73,4 @@ $$
 ----
 Prev: [กรอบการเรียนรู้แบบ Probably Approximately Correct](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac1)
 
-Next: [ปัญหาการเรียนรู้ boolean conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)
+Next: [ปัญหาการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)

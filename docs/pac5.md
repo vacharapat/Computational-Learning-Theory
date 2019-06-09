@@ -14,7 +14,7 @@ $$
 สำหรับ 3-term DNF $T_1\lor T_2\lor T_3$ ใด ๆ เราจะสามารถจัดให้อยู่ในรูปของ 3-CNF ได้ดังนี้
 
 $$
-T_1\lor T_2\lot T_3 = \bigwedge_{u\in T_1\\v_in T_2\\w\in T_3}(u\lor v\lor w)
+T_1\lor T_2\lor T_3 = \bigwedge_{u\in T_1\\v_in T_2\\w\in T_3}(u\lor v\lor w)
 $$
 
 ตัวอย่างเช่น 3-term DNF

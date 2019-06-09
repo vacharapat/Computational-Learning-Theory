@@ -141,4 +141,4 @@ $T_k$ ที่ $v(i)$ และ $v(j)$ ทำให้เป็นจริง�
 ----
 Prev: [ปัญหาการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3)
 
-Next:
+Next: [Representation และประสิทธิภาพในการเรียนรู้](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac5)

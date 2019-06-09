@@ -30,3 +30,9 @@ $$
 (x_1\lor \bar{x}_3\lor\bar{x}_1)\land (x_1\lor \bar{x}_3\lor x_4)\land
 (x_1\lor x_4\lor \bar{x}_1)\land (x_1\lor x_4\lor x_4)
 $$
+
+ซึ่งลดรูปได้เป็น
+
+$$
+(x_1\lor x_2\lor x_4)\land (x_1\lor \bar{x}_3\lor x_4)\land (x_1\lor x_4)
+$$

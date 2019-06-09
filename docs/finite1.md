@@ -50,15 +50,26 @@ $$
 
 ## การเรียนรู้ Boolean Conjunction
 
-ย้อนกลับมาพิจารณา [ปัญหาการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3) บนตัวแปร $x_1\dots, x_n$ สังเกตว่าอัลกอริทึมการเรียนรู้ของเรานั้นจะให้ hypothesis เป็น conjunction
+ย้อนกลับมาพิจารณา [ปัญหาการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac3) บนตัวแปร $x_1\dots, x_n$ ซึ่งเราเคยวิเคราะห์ว่าสามารถเรียนรู้ได้โดยมี sample complexity
+เป็น $\frac{2n}{\epsilon}\ln\frac{2n}{\delta}$
+
+สังเกตว่าอัลกอริทึมการเรียนรู้ของเรานั้นจะให้ hypothesis เป็น conjunction
 ที่สอดคล้องกับตัวอย่างข้อมูลที่ได้รับมาทั้งหมด เนื่องจากเรารับประกันได้ว่า literal ทั้งหมดที่มีอยู่ใน conjunction เป้าหมาย $c$
 จะปรากฏใน hypothesis $h$ ที่เป็นคำตอบจากอัลกอริทึมแน่นอน นั่นแสดงว่า negative example ซึ่งขัดแย้งกับ $c$
 จะต้องขัดแย้งกับ $h$ ด้วยเช่นกัน ในขณะที่อัลกอริทึมของเราจะมีการปรับปรุง hypothesis เพื่อให้สอดคล้องกับตัวอย่างข้อมูลที่เป็น
 positive example ทั้งหมด เราจึงสรุปได้ว่า hypothesis $h$ จากอัลกอริทึมนี้จะสอดคล้องกับตัวอย่างข้อมูล $S$ แน่นอน
 
-เนื่องจากสำหรับ conjunction $c$ ใด ๆ สำหรับตัวแปร $x_i$ แต่ละตัว เรามีทางเลือกในการปรากฏอยู่ใน conjunction ทั้งสิ้น 3 ทางเลือก คือจะปรากฏเป็น $x_i$ หรือ $\bar{x}_i$ หรือไม่ปรากฏเลยก็ได้ ดังนั้นจะเห็นว่าจำนวน conjunction ทั้งหมดที่เป็นไปได้จะมีจำนวนเท่ากับ $3^n$
+เนื่องจากสำหรับ conjunction $c$ ใด ๆ สำหรับตัวแปร $x_i$ แต่ละตัว เรามีทางเลือกในการปรากฏอยู่ใน $c$ ทั้งสิ้น 3 ทางเลือก คือจะปรากฏเป็น $x_i$ หรือ $\bar{x}_i$ หรือไม่ปรากฏเลยก็ได้ ดังนั้นจะเห็นว่าจำนวน conjunction ทั้งหมดที่เป็นไปได้จะมีจำนวนเท่ากับ $3^n$ นั่นคือขนาดของ $H$ เท่ากับ $3^n$ นั่นเอง
 
-จากการวิเคราะห์ของเราเมื่อ hypothesis space มีจำนวนจำกัด เราจึงได้ว่าอัลกอริทึมการเรียนรู้ conjunction นี้สามารถเรียนรู้ได้โดยมี sample complexity เป็น $\frac{1}{\epsilon}(n\log 3+\log\frac{1}{\delta})$ หรือมี generalization bound เป็น
+จากการวิเคราะห์ของเราเมื่อ hypothesis space มีจำนวนจำกัด เราจึงได้ว่าอัลกอริทึมการเรียนรู้ conjunction เดียวกันนี้สามารถเรียนรู้ได้โดยมี sample complexity เป็น
+
+$$
+\frac{1}{\epsilon}(n\log 3+\log\frac{1}{\delta})
+$$
+
+ซึ่งดีกว่า sample complexity ที่วิเคราะห์ได้ก่อนหน้านี้
+
+ในมุมของ generalization error เราก็สรุปได้ว่า hypothesis $h$ ที่เป็นผลลัพธ์จากการเรียนรู้จะมีความผิดพลาด
 
 $$
 R(h)\leq \frac{1}{m}(n\log 3+\log\frac{1}{\delta})

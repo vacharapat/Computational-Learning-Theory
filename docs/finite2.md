@@ -139,14 +139,17 @@ $$
 เราจะได้ว่าสามารถเรียนรู้ปัญหา Boolean Conjunction นี้ได้โดยมี generalization error เป็น
 
 $$
-R(h)\leq \frac{1}{m}(\ln 2^{size(c)\ln m(\log n+1)} +\ln\frac{1}{\delta})
+\begin{split}
+R(h) &\leq \frac{1}{m}(\ln 2^{size(c)\ln m(\log n+1)} +\ln\frac{1}{\delta})\\
+&= \frac{1}{m}(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta})
+\end{split}
 $$
 
 หรือกล่าวได้อีกอย่างว่า อัลกอริทึมใหม่นี้ทำการเรียนรู้ตามกรอบการเรียนรู้แบบ PAC
 ได้เมื่อจำนวนตัวอย่างข้อมูลเป็นไปตามอสมการต่อไปนี้
 
 $$
-m\geq\frac{1}{\epsilon}(\ln 2^{size(c)\ln m(\log n+1)} +\ln\frac{1}{\delta})
+m\geq\frac{1}{\epsilon}(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta})
 $$
 
 สังเกตว่าอสมการด้านบนนี้ยังไม่สามารถบอก sample complexity ได้อย่างชัดเจน

@@ -140,8 +140,8 @@ $$
 
 $$
 \begin{split}
-R(h) &\leq \frac{1}{m}(\ln 2^{size(c)\ln m(\log n+1)} +\ln\frac{1}{\delta})\\
-&= \frac{1}{m}(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta})
+R(h) &\leq \frac{1}{m}\left(\ln 2^{size(c)\ln m(\log n+1)} +\ln\frac{1}{\delta}\right)\\
+&= \frac{1}{m}\left(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta}\right)
 \end{split}
 $$
 
@@ -149,7 +149,7 @@ $$
 ได้เมื่อจำนวนตัวอย่างข้อมูลเป็นไปตามอสมการต่อไปนี้
 
 $$
-m\geq\frac{1}{\epsilon}(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta})
+m\geq\frac{1}{\epsilon}\left(size(c)\ln m(\log n+1)\ln 2 +\ln\frac{1}{\delta}\right)
 $$
 
 สังเกตว่าอสมการด้านบนนี้ยังไม่สามารถบอก sample complexity ได้อย่างชัดเจน

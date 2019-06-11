@@ -166,5 +166,5 @@ $$
 พิจารณาฟังก์ชัน $y_1=\ln x$ และ $y_2=ax+b$ ที่ทั้งสองฟังก์ชันนี้มีค่าเท่ากันที่จุด $x=\alpha$ ดังรูป
 
 <p align="center">
-<img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/ln.png">
+<img width="400" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/ln.png">
 </p>

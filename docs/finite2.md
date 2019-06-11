@@ -188,3 +188,17 @@ $$
 $$
 \ln x \leq \frac{1}{\alpha}x + \ln\alpha -1
 $$
+
+ดังนั้นเมื่อเราแทน $x$ ด้วย $m$ และแทนค่า $\alpha$ ด้วย $2size(c)\ln(2n)/\epsilon$ (ซึ่งมีค่ามากกว่า 0) เราจะได้ว่า
+
+$$
+\ln m\leq \frac{\epsilon}{2size(c)\ln(2n)}m + \ln(2size(c)\ln(2n)/\epsilon) -1
+$$
+
+ถ้าเราพิจารณาค่า $m$ ที่น้อยที่สุดที่ต้องการในการเรียนรู้ กล่าวคือ ให้ $m=\frac{1}{\epsilon}\left(size(c)\ln m\ln(2n) +\ln\frac{1}{\delta}\right)$ เราจะได้ว่า
+
+$$
+\begin{split}
+m\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)(\frac{\epsilon}{2size(c)\ln(2n)}m + \ln(2size(c)\ln(2n)/\epsilon) -1) + \ln\frac{1}{\delta}\right)
+\end{split}
+$$

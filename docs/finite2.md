@@ -168,3 +168,23 @@ $$
 <p align="center">
 <img width="400" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/ln.png">
 </p>
+
+เนื่องจากที่จุด $x=\alpha$ ฟังก์ชันทั้งสองมีความชันเท่ากัน นั่นคือ
+
+$$
+a=\left.\frac{\text{d}}{\text{d} x}\ln x\right|_{\alpha} = \left.\frac{1}{x}\right|_\alpha = \frac{1}{\alpha}
+$$
+
+และที่จุดเดียวกันนี้ $y_1$ และ $y_2$ ก็มีค่าเท่ากัน นั่นคือ
+
+$$
+\ln\alpha = 1 + b
+$$
+
+หรือได้ว่า $b = \ln\alpha -1$ นั่นเอง
+
+เนื่องจากฟังก์ชันเส้นตรง $y_2$ จะเป็นขอบเขตบนให้กับ $y_1$ เสมอ เราจึงสรุปได้ว่า สำหรับ $\alpha>0$ ใด ๆ
+
+$$
+\ln x \leq \frac{1}{\alpha}x + \ln\alpha -1
+$$

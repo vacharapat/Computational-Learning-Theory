@@ -192,14 +192,27 @@ $$
 ดังนั้นเมื่อเราแทน $x$ ด้วย $m$ และแทนค่า $\alpha$ ด้วย $2size(c)\ln(2n)/\epsilon$ (ซึ่งมีค่ามากกว่า 0) เราจะได้ว่า
 
 $$
-\ln m\leq \frac{\epsilon}{2size(c)\ln(2n)}m + \ln(\frac{2size(c)\ln(2n)}{\epsilon}) -1
+\ln m\leq \frac{\epsilon}{2size(c)\ln(2n)}m + \ln\frac{2size(c)\ln(2n)}{\epsilon} -1
 $$
 
 ถ้าเราพิจารณาค่า $m$ ที่น้อยที่สุดที่ต้องการในการเรียนรู้ กล่าวคือ ให้ $m=\frac{1}{\epsilon}\left(size(c)\ln m\ln(2n) +\ln\frac{1}{\delta}\right)$ เราจะได้ว่า
 
 $$
 \begin{split}
-m &\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)\left(\frac{\epsilon}{2size(c)\ln(2n)}m + \ln(\frac{2size(c)\ln(2n)}{\epsilon}) -1\right) + \ln\frac{1}{\delta}\right)\\
-& = \frac{m}{2} + \frac{1}{\epsilon}\left(size(c)\ln(2n)\ln(\frac{2size(c)\ln(2n)}{\epsilon}) - size(c)\ln(2n) + \ln\frac{1}{\delta}\right)
+m &\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)\left(\frac{\epsilon}{2size(c)\ln(2n)}m + \ln\frac{2size(c)\ln(2n)}{\epsilon} -1\right) + \ln\frac{1}{\delta}\right)\\
+& = \frac{m}{2} + \frac{1}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} - size(c)\ln(2n) + \ln\frac{1}{\delta}\right)\\
+&\leq \frac{m}{2} + \frac{1}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} + \ln\frac{1}{\delta}\right)
 \end{split}
+$$
+
+ดังนั้นเราจึงได้ว่า
+
+$$
+\frac{m}{2}\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} + \ln\frac{1}{\delta}\right)
+$$
+
+หรือก็คือ
+
+$$
+m\leq \frac{2}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} + \ln\frac{1}{\delta}\right)
 $$

@@ -199,6 +199,7 @@ $$
 
 $$
 \begin{split}
-m\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)(\frac{\epsilon}{2size(c)\ln(2n)}m + \ln(2size(c)\ln(2n)/\epsilon) -1) + \ln\frac{1}{\delta}\right)
+m &\leq \frac{1}{\epsilon}\left(size(c)\ln(2n)(\frac{\epsilon}{2size(c)\ln(2n)}m + \ln(2size(c)\ln(2n)/\epsilon) -1) + \ln\frac{1}{\delta}\right)\\
+& = \frac{m}{2} + \frac{1}{\epsilon}\left(size(c)\ln(2n)\ln(2\size(c)\ln(2n)/\epsilon) - size(c)\ln(2n) + \ln\frac{1}{\delta}\right)
 \end{split}
 $$

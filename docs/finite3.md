@@ -88,3 +88,5 @@ $$
 $$
 m\geq\frac{8}{\epsilon}\left(size(c)\ln\frac{2}{\epsilon}\ln(2n) +\ln\frac{1}{\delta}\right)
 $$
+
+ซึ่งจะเห็นว่าอัตราการโตของ  sample complexity ใหม่นี้ดีขึ้นกว่าเดิม

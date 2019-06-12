@@ -222,3 +222,8 @@ $$
 ซึ่งจะเห็นว่า อัตราการโตของ sample space นี้เกือบจะเป็นเชิงเส้นบน $size(c)$ โดยจะโตเป็น $O(size(c)\log size(c))$
 ในขณะที่อัตราการโตเมื่อเทียบกับ $n$ เป็น $O(\log n\log\log n)$ หาก conjunction $c$
 ที่ต้องการเรียนรู้นั้นมี $size(c)\ll n$ เราก็จะเห็นว่าอัลกอริทึมใหม่นี้มีประสิทธิภาพในการเรียนรู้ดีกว่าเดิม
+
+----
+Prev: [Consistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite1)
+
+Next: 

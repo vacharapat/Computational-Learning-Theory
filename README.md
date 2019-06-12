@@ -8,3 +8,4 @@
 ### Hypothesis Space ที่มีขนาดจำกัด
 1. [Consistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite1)
 1. [การปรับปรุงการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite2)
+1. [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)

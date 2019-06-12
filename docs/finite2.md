@@ -216,3 +216,9 @@ $$
 $$
 m\leq \frac{2}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} + \ln\frac{1}{\delta}\right)
 $$
+
+ดังนั้นเรานึงได้ว่า อัลกอริทึมใหม่นี้จะสามารถเรียนรู้ปัญหา Boolean Conjunction ตามกรอบของ PAC ได้
+เมื่อมีจำนวนตัวอย่างข้อมูลอย่างน้อย $\frac{2}{\epsilon}\left(size(c)\ln(2n)\ln\frac{2size(c)\ln(2n)}{\epsilon} + \ln\frac{1}{\delta}\right)$
+ซึ่งจะเห็นว่า อัตราการโตของ sample space นี้เกือบจะเป็นเชิงเส้นบน $size(c)$ โดยจะโตเป็น $O(size(c)\log size(c))$
+ในขณะที่อัตราการโตเมื่อเทียบกับ $n$ เป็น $O(\log n\log\log n)$ หาก conjunction $c$
+ที่ต้องการเรียนรู้นั้นมี $size(c)\ll n$ เราก็จะเห็นว่าอัลกอริทึมใหม่นี้มีประสิทธิภาพในการเรียนรู้ดีกว่าเดิม

@@ -226,4 +226,4 @@ $$
 ----
 Prev: [Consistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite1)
 
-Next: 
+Next: [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)

@@ -63,3 +63,28 @@ $$
 &\leq e^{-m\epsilon/8}
 \end{split}
 $$
+
+จากตรงนี้เราสรุปได้ว่า สำหรับ hypothesis $h$ ที่มี $R(h)>\epsilon$ ความน่าจะเป็นที่ $h$ จะสอดคล้องกับตัวอย่างข้อมูลใน $S$
+อย่างน้อย $(1-\epsilon/2)m$ ตัว จะมีค่าไม่เกิน $e^{-m\epsilon/8}$ ดังนั้น ความน่าจะเป็นที่จะมี hypothesis ดังกล่าวอย่างน้อยหนึ่งตัวจะมีค่าไม่เกิน
+
+$$
+|H|e^{-m\epsilon/8} = 2^{size(c)\ln(2/\epsilon)\log_2(2n)}e^{-m\epsilon/8}
+$$
+
+ถ้าเราอยากให้ความน่าจะเป็นดังกล่าวมีไม่เกิน $\delta$ ก็ทำได้โดยกำหนดให้
+
+$$
+2^{size(c)\ln(2/\epsilon)\log_2(2n)}e^{-m\epsilon/8}\leq \delta
+$$
+
+ซึ่งจะได้
+
+$$
+size(c)\ln(2/\epsilon)\frac{\ln (2n)}{\ln 2}\ln 2 - \frac{m\epsilon}{8}\leq\ln \delta
+$$
+
+หรือได้เป็น
+
+$$
+m\geq\frac{8}{\epsilon}\left(size(c)\ln\frac{2}{\epsilon}\ln(2n) +\ln\frac{1}{\delta}\right)
+$$

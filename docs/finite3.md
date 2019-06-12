@@ -15,5 +15,11 @@ negative example ที่ไม่สอดคล้องอยู่ไม่
 ที่ยังไม่ถูกครอบคลุมเหลือไม่เกิน $\epsilon m/2$ เราจะได้ว่าการวนรอบนี้จะสิ้นสุดเมื่อ
 
 $$
-|U_i|\leq \left(1-\frac{1}{OPT}\right)^i<e^{-i/OPT}\leq \frac{\epsilon m}{2}
+|U_i|\leq m\left(1-\frac{1}{OPT}\right)^i<me^{-i/OPT}\leq \frac{\epsilon m}{2}
+$$
+
+ซึ่งจะเป็นจริงเมื่อ
+
+$$
+i = OPT\ln\frac{2}{\epsilon}\leq size(c)\ln\frac{2}{\epsilon}
 $$

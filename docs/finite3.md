@@ -80,7 +80,7 @@ $$
 ซึ่งจะได้
 
 $$
-size(c)\ln(2/\epsilon)\frac{\ln (2n)}{\ln 2}\ln 2 - \frac{m\epsilon}{8}\leq\ln \delta
+size(c)\ln\frac{2}{\epsilon}\frac{\ln (2n)}{\ln 2}\ln 2 - \frac{m\epsilon}{8}\leq\ln \delta
 $$
 
 หรือได้เป็น

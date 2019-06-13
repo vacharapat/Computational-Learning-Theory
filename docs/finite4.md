@@ -43,5 +43,5 @@ $\bar{x}_1x_2x_5$ ในขณะที่ $a_2=(0,0,1,1,1)$ จะให้ผ�
 เราอาจมอง decision list ในลักษณะแผนภาพได้ตามภาพต่อไปนี้
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dl.png">
+<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dl.png">
 </p>

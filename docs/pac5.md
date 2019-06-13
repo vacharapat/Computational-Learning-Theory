@@ -3,7 +3,7 @@
 ในหัวข้อนี้ เราจะแสดงให้เห็นว่า ถ้าเราเปลี่ยนรูปแบบของ representation ของ 3-term DNF
 เสียใหม่ จะทำให้คลาสของ 3-term DNF สามารถทำการเรียนรู้อย่างมีประสิทธิภาพได้
 
-เราจะใช้ความจริงที่ว่า สำหรับ 3-term DNF ใด ๆ เราสามารถเขียนให้อยู่ในรูป
+เราจะใช้ความจริงที่ว่า สำหรับ 3-term DNF ใด ๆ เราสามารถเขียนให้อยู่ในรูป conjunctive normal form (CNF)
 
 $$
 d_1\land\dots\land d_j
@@ -20,21 +20,21 @@ $$
 ตัวอย่างเช่น 3-term DNF
 
 $$
-(x_1)\lor (x_2\land \bar{x}_3\land x_4)\lor (\bar{x}_1\land x_4)
+x_1\lor x_2 \bar{x}_3 x_4\lor \bar{x}_1 x_4
 $$
 
 จะสามารถเขียนในรูป 3-CNF ได้เป็น
 
 $$
-(x_1\lor x_2\lor \bar{x}_1)\land (x_1\lor x_2\lor x_4)\land
-(x_1\lor \bar{x}_3\lor\bar{x}_1)\land (x_1\lor \bar{x}_3\lor x_4)\land
-(x_1\lor x_4\lor \bar{x}_1)\land (x_1\lor x_4\lor x_4)
+(x_1\lor x_2\lor \bar{x}_1) (x_1\lor x_2\lor x_4)
+(x_1\lor \bar{x}_3\lor\bar{x}_1) (x_1\lor \bar{x}_3\lor x_4)
+(x_1\lor x_4\lor \bar{x}_1) (x_1\lor x_4\lor x_4)
 $$
 
 ซึ่งลดรูปได้เป็น
 
 $$
-(x_1\lor x_2\lor x_4)\land (x_1\lor \bar{x}_3\lor x_4)\land (x_1\lor x_4)
+(x_1\lor x_2\lor x_4) (x_1\lor \bar{x}_3\lor x_4) (x_1\lor x_4)
 $$
 
 หากเราพิจารณาปัญหาการเรียนรู้ 3-CNF จะเห็นว่าเราสามารถลดรูปให้เป็นปัญหาการเรียนรู้ Boolean Conjunction

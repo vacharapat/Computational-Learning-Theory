@@ -94,4 +94,4 @@ $$
 ----
 Prev: [การปรับปรุงการเรียนรู้ Boolean Conjunction](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite2)
 
-Next: 
+Next: [ปัญหาการเรียนรู้ Decision List](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite4)

@@ -158,7 +158,7 @@ $z_{c,1}$ อยู่ในกลุ่มเดียวกัน (เป็�
 ได้ด้วย sample complexity
 
 $$
-m=\O(\frac{1}{\epsilon}\left(n\log n+\log\frac{1}{\delta}\right))
+m=O(\frac{1}{\epsilon}\left(n\log n+\log\frac{1}{\delta}\right))
 $$
 
 หรือได้ว่า hypothesis $h$ ที่ได้จะมี generalization error เป็น

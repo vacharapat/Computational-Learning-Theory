@@ -174,4 +174,9 @@ $$
 decision list ที่มีจำนวนเงื่อนไขน้อย แนวทางหนึ่งที่น่าสนใจคือการใช้แนวคิดแบบ greedy
 นั่นคือ ในแต่ละรอบเราจะเลือก literal $z$ ที่ $S_z$ มีขนาดใหญ่ที่สุดมาเป็นเงื่อนไข
 อย่างไรก็ดี การหา decision list ที่สั้นที่สุดที่สอดคล้องกับตัวอย่างข้อมูลทั้งหมดใน $S$ นั้น
-จัดเป็นปัญหาที่อยู่ในกลุ่มปัญหา NP-complete 
+จัดเป็นปัญหาที่อยู่ในกลุ่มปัญหา NP-complete
+
+----
+Prev: [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)
+
+Next:

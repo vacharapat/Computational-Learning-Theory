@@ -21,6 +21,8 @@ $f_T(a)$ จะมีค่าเท่ากับ $f_{T_0}(a)$ ถ้า $a_i$
 ถ้า $a_i$ มีค่าเป็น 1 รูปต่อไปนี้แสดงตัวอย่าง decision tree บนตัวแปร $x_1,x_2,x_3,x_4$
 ซึ่งจะให้ค่าเป็น 1 หาก input เป็น $(0,1,1,0)$ แต่จะให้ค่าเป็น 0 หาก input เป็น $(1,0,1,1)$
 สังเกตว่าตัวแปร $x_i$ แต่ละตัวอาจถูก label ที่ internal node ใน decision tree มากกว่าหนึ่ง node ก็ได้
+อย่างไรก็ดี หากใน decision tree มี path จาก root ไปยัง leaf node ใด ที่มีตัวแปร $x_i$ บางตัวปรากฏมากกว่าหนึ่งครั้ง
+เราจะสามารถลดรูป decision tree ดังกล่าวให้ตัวแปรทั้งหมดปรากฏไม่เกินหนึ่งครั้งในแต่ละ path ได้
 
 <p align="center">
 <img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree.png">
@@ -30,4 +32,21 @@ $f_T(a)$ จะมีค่าเท่ากับ $f_{T_0}(a)$ ถ้า $a_i$
 
 $$
 \bar{x}_1\bar{x}_2\lor x_2x_3\bar{x}_4\lor x_1x_2x_4
+$$
+
+จากตัวอย่างนี้ สังเกตว่าหากเราให้ความสูงของ decision tree แทนจำนวน node ที่มากที่สุดใน path
+จาก root ไปยัง leaf node ใด ๆ เราจะได้ว่า ฟังก์ชันที่ represent ได้ด้วย decision tree ที่มีความสูงไม่เกิน
+$k$ จะสามารถ represent ด้วย $k$-decision list ได้เช่นกัน ในความเป็นจริงแล้วเราทราบว่าไม่เฉพาะ decision tree
+ที่มีความสูงไม่เกิน $k$ เท่านั้นที่สามารถแปลงเป็น $k$-decision list ได้
+
+สำหรับ decision tree $T$ เรากำหนดให้ $rank(T)$ มีค่าเป็น 0 ถ้า $T$ เป็นต้นไม้ที่มี node เดียว
+ไม่เช่นนั้นให้ $T_0$ และ $T_1$ เป็นต้นไม้ย่อยด้านซ้ายและขวาของ root ของ $T$ เรากำหนดให้
+
+$$
+rank(T)=\begin{cases}
+\begin{split}
+\max(rank(T_0), rank(T_1)) &\text{ ถ้า } rank(T_0)\neq rank(T_1)\\
+rank(T_0)+1 &\text{ กรณีอื่น ๆ }
+\end{split}
+\end{cases}
 $$

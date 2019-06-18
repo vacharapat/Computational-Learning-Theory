@@ -44,9 +44,9 @@ $k$ จะสามารถ represent ด้วย $k$-decision list ได้�
 
 $$
 rank(T)=\begin{cases}
-\begin{split}[ll]
+\begin{matrix}[ll]
 \max(rank(T_0), rank(T_1)) &\text{ ถ้า } rank(T_0)\neq rank(T_1)\\
 rank(T_0)+1 &\text{ กรณีอื่น ๆ }
-\end{split}
+\end{matrix}
 \end{cases}
 $$

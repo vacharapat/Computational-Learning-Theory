@@ -49,7 +49,7 @@ $k$-DNF ได้เสมอ
 พิจารณาตัวอย่าง decision tree ความสูงเท่ากับ 3 ดังรูปต่อไปนี้
 
 <p align="center">
-<img width="400" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree2.png">
+<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree2.png">
 </p>
 
 จะเห็นว่าด้วยวิธีการดังกล่าว เราจะสามารถลดรูปให้กลายเป็น

@@ -62,7 +62,7 @@ $$
 
 ซึ่งการแปลงเป็น 1-decision list นี้มีความเรียบง่ายกว่าและใช้พื้นที่ของ representation น้อยกว่า
 
-## $Rank-r decision tree represent ได้ด้วย $r$-decision list
+## Rank-$r$ decision tree represent ได้ด้วย $r$-decision list
 
 ในหัวข้อนี้เราจะแสดงให้เห็นวิธีการแปลง decision tree ให้เป็น decision list ที่ represent ฟังก์ชันเดียวกัน
 โดย decision list ที่ได้จะมีขนาด representation ที่รัดกุมมากกว่าการแปลงเป็น DNF ก่อนหน้านี้

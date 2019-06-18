@@ -22,7 +22,7 @@ $f_T(a)$ จะมีค่าเท่ากับ $f_{T_0}(a)$ ถ้า $a_i$
 ซึ่งจะให้ค่าเป็น 1 หาก input เป็น $(0,1,1,0)$ แต่จะให้ค่าเป็น 0 หาก input เป็น $(1,0,1,1)$
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree.png">
+<img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree.png">
 </p>
 
 เราสามารถมองเห็นได้ไม่ยากนักว่า decision tree ต้นนี้ represent ฟังก์ชัน

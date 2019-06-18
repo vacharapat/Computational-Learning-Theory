@@ -179,4 +179,4 @@ decision list ที่มีจำนวนเงื่อนไขน้อย
 ----
 Prev: [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)
 
-Next:
+Next: [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)

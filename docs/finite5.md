@@ -50,9 +50,9 @@ $k$ จะสามารถ represent ด้วย $k$-DNF ได้เช่�
 
 $$
 rank(T)=\begin{cases}
-\begin{matrix}{ll}
+\begin{array}{ll}
 \max(rank(T_0), rank(T_1)) &\text{ ถ้า } rank(T_0)\neq rank(T_1)\\
 rank(T_0)+1 &\text{ กรณีอื่น ๆ }
-\end{matrix}
+\end{array}
 \end{cases}
 $$

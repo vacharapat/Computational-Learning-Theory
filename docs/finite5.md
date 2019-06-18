@@ -20,12 +20,13 @@ $b$ เสมอไม่ว่าจะรับ input เป็นอะไร
 $f_T(a)$ จะมีค่าเท่ากับ $f_{T_0}(a)$ ถ้า $a_i$ มีค่าเป็น 0 และมีค่าเป็น $f_{T_1}(a)$
 ถ้า $a_i$ มีค่าเป็น 1 รูปต่อไปนี้แสดงตัวอย่าง decision tree บนตัวแปร $x_1,x_2,x_3,x_4$
 ซึ่งจะให้ค่าเป็น 1 หาก input เป็น $(0,1,1,0)$ แต่จะให้ค่าเป็น 0 หาก input เป็น $(1,0,1,1)$
+สังเกตว่าตัวแปร $x_i$ แต่ละตัวอาจถูก label ที่ internal node ใน decision tree มากกว่าหนึ่ง node ก็ได้
 
 <p align="center">
 <img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/decisiontree.png">
 </p>
 
-เราสามารถมองเห็นได้ไม่ยากนักว่า decision tree ต้นนี้ represent ฟังก์ชัน
+เราสามารถมองเห็นได้ไม่ยากนักว่า decision tree ต้นนี้ represent ฟังก์ชันที่แสดงได้ด้วย DNF ดังนี้
 
 $$
 \bar{x}_1\bar{x}_2\lor x_2x_3\bar{x}_4\lor x_1x_2x_4

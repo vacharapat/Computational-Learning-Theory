@@ -157,3 +157,8 @@ $$
 $$
 m\geq\frac{2}{\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
 $$
+
+----
+Prev: [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)
+
+Next:

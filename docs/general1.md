@@ -61,4 +61,4 @@ $$
 ----
 Prev: [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)
 
-Next:
+Next: [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/general2)

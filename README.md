@@ -14,3 +14,4 @@
 
 ### Stochastic Scenario
 1. [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)
+1. [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/general2)

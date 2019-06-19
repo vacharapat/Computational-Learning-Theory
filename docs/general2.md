@@ -109,25 +109,41 @@ $$
 
 
 ## Empirical risk minimization
-จาก generalization bound ดังกล่าวจะเห็นว่าหากเราอยากได้ hypothesis $h$ ที่มีอัตราความผิดพลาดโดยเฉลี่ยน้อยที่สุด ($R(h)$ น้อยที่สุด)
-วิธีหนึ่งที่น่าสนใจคือการหา hypothesis ที่มีค่าความผิดพลาดบนตัวอย่างข้อมูลใน $S$ น้อยที่สุด เราเรียกแนวทางการเลือก hypothesis เช่นนี้ว่า _empirical risk minimization_ ซึ่ง หาก $h_S^\text{ERM}$ เป็น hypothesis ที่ได้จากการเลือกดังกล่าว นั่นคือ
+เนื่องจากเราสามารถบีบความแตกต่างระหว่าง empirical error กับ expected error ได้
+จะเห็นว่าหากเราอยากได้ hypothesis $h$ ที่มีอัตราความผิดพลาดโดยเฉลี่ยน้อยที่สุด ($R(h)$ น้อยที่สุด)
+วิธีหนึ่งที่น่าสนใจคือการหา hypothesis ที่มีค่าความผิดพลาดบนตัวอย่างข้อมูลใน $S$ น้อยที่สุด เราเรียกแนวทางการเลือก hypothesis เช่นนี้ว่า _empirical risk minimization_ ซึ่ง หาก $h_{ERM}$ เป็น hypothesis ที่ได้จากการเลือกดังกล่าว นั่นคือ
 
 $$
-h_S^\text{ERM}=\arg\min_{h\in H}\hat{R}_S(h)
+h_{ERM}=\arg\min_{h\in H}\hat{R}(h)
 $$
 
-และให้ $$h^*$$ เป็น hypothesis ที่มีอัตราความผิดพลาดโดยเฉลี่ยหรือ risk น้อยที่สุดใน $H$ เราจะสามารถหา generalization bound ของ $R(h_S^\text{ERM})$ เทียบกับ $R(h^*)$ ได้ดังนี้
+และให้ $$h^*$$ เป็น hypothesis ที่มีอัตราความผิดพลาดโดยเฉลี่ยหรือ risk น้อยที่สุดใน $H$ เราจะสามารถหา generalization bound ของ $R(h_{ERM})$ เทียบกับ $R(h^*)$ ได้ดังนี้
 
 $$
 \begin{split}
-R(h_S^\text{ERM}) - R(h^*) & = R(h_S^\text{ERM}) - \hat{R}_S(h_S^\text{ERM}) + \hat{R}_S(h_S^\text{ERM}) - R(h^*)\\
-&\leq R(h_S^\text{ERM}) - \hat{R}_S(h_S^\text{ERM}) + \hat{R}_S(h^*) - R(h^*)\\
+R(h_{ERM}) - R(h^*) & = R(h_{ERM}) - \hat{R}(h_{ERM}) + \hat{R}(h_{ERM}) - R(h^*)\\
+&\leq R(h_{ERM}) - \hat{R}(h_{ERM}) + \hat{R}(h^*) - R(h^*)\\
 &\leq 2\epsilon
 \end{split}
 $$
 
+โดยจากบรรทัดที่ 1 มาบรรทัดที่ 2 เราใช้ความจริงที่ว่า $\hat{R}(h_{ERM})\leq \hat{R}(h^*)$
+เนื่องจากเราเลือก $h_{ERM}$ ที่มี empirical error น้อยที่สุด
+
 เพราะฉะนั้น ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$
 
 $$
-R(h_S^\text{ERM})\leq R(h^*) + \sqrt{\frac{2}{m}(\log|H|+\log\frac{2}{\delta})}
+R(h_{ERM})\leq R(h^*) + \sqrt{\frac{2}{m}(\log|H|+\log\frac{2}{\delta})}
+$$
+
+หรือกล่าวได้อีกอย่างว่า ถ้าจำนวนตัวอย่างข้อมูลเป็น
+
+$$
+m\geq\frac{1}{2\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
+$$
+
+ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ อัลกอริทึม estimation risk minimization จะให้ผลลัพธ์เป็น hypothesis $h_{ERM}$ ที่มี error
+
+$$
+R(h_{ERM})\leq R(h^*)+2\epsilon
 $$

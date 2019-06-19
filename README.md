@@ -12,5 +12,5 @@
 1. [ปัญหาการเรียนรู้ Decision List](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite4)
 1. [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)
 
-### กรณีทั่วไป
-1. [Stochastic Scenario](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)
+### Stochastic Scenario
+1. [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)

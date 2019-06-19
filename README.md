@@ -11,3 +11,6 @@
 1. [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)
 1. [ปัญหาการเรียนรู้ Decision List](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite4)
 1. [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)
+
+### กรณีทั่วไป
+1. [Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)

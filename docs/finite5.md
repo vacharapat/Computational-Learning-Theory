@@ -148,4 +148,4 @@ decision tree นี้ก็สามารถเรียนรู้ได้
 ----
 Prev: [ปัญหาการเรียนรู้ Decision List](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite4)
 
-Next:
+Next: [Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)

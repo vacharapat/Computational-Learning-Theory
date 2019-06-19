@@ -13,4 +13,4 @@
 1. [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)
 
 ### กรณีทั่วไป
-1. [Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)
+1. [Stochastic Scenario](https://vacharapat.github.io/Computational-Learning-Theory/docs/general1)

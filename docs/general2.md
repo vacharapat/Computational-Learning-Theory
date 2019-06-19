@@ -40,3 +40,94 @@ $1/\delta$, $n$ และ $size(h^*)$ เราจะเรียกว่าเ
 $$
 \hat{R}(h)=\frac{1}{m}|\{(x,y)\in S: h(x)\neq y\}| = \frac{1}{m}\sum_{i=1}^m1_{h(x_i)\neq y}
 $$
+
+เครื่องมือที่เราจะใช้ในการวิเคราะห์ขอบเขตดังกล่าวคือ Hoeffding's inequality ซึ่งกล่าวไว้ดังนี้
+
+**Hoeffding's inequality**
+ให้ $X_1,\dots,X_m$ เป็ตัวแปรสุ่มที่เป็นอิสระกัน $m$ ตัวโดยที่ $X_i$ มีค่าอยู่ในช่วง $[a_i,b_i]$ ถ้าให้ $S_m=\sum_{i=1}^mX_i$ เราจะได้ว่า
+
+$$
+\Pr[S_m-\mathbb{E}[S_m]\geq\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
+$$
+
+และ
+
+$$
+\Pr[S_m-\mathbb{E}[S_m]\leq -\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
+$$
+
+จาก Hoeffding's inequality เราจะได้ว่าเมื่อเราพิจารณาตัวอย่างข้อมูล $S$ และทำการเลือก hypothesis $h\in H$ ที่มีอัตราผิดพลาดบน $S$ เท่ากับ $\hat{R}(h)$ เราสามารถวิเคราะห์โอกาสที่ $h$ จะมีอัตราผิดพลาดเฉลี่ยจริง $R(h)$ แตกต่างจาก $\hat{R}(h)$ มากได้ดังนี้
+
+$$
+\Pr[\hat{R}(h)-R(h)\geq\epsilon]\leq e^{-2m\epsilon^2}
+$$
+
+และ
+
+$$
+\Pr[\hat{R}(h)-R(h)\leq -\epsilon]\leq e^{-2m\epsilon^2}
+$$
+
+ซึ่งจาก union bound เราสามารถสรุปได้เป็น
+
+$$
+\Pr[|\hat{R}(h)-R(h)|\geq \epsilon]\leq 2e^{-2m\epsilon^2}
+$$
+
+นั่นแสดงว่าหาก hypothesis space $H$ มีขนาดจำกัด เราสามารถจำกัดขอบเขตของความน่าจะเป็นที่จะมี
+hypothesis $h$ บางตัวใน $H$ ที่มี empirical error $\hat{R}(h)$ แตกต่างจาก $R(h)$ เกิน $\epsilon$ ได้ดังนี้
+
+$$
+\begin{split}
+\Pr[\exists h\in H: |\hat{R}(h)-R(h)|\geq\epsilon] &\leq\sum_{h\in H}\Pr[|\hat{R}(h)-R(h)|\leq\epsilon]\\
+&\leq \sum_{h\in H} 2e^{-2m\epsilon^2}\\
+&= 2|H|e^{-2m\epsilon^2}
+\end{split}
+$$
+
+ถ้าเรากำหนดให้
+$2|H|e^{-2m\epsilon^2}=\delta$
+เราจะได้
+
+$$
+\epsilon = \sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
+$$
+
+นั่นคือ ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ hypothesis $h$ ทุกตัวใน $H$ จะมีขอบเขตของ error ดังนี้
+
+$$
+R(h)\leq \hat{R}_S(h)+\sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
+$$
+
+หรือในมุมของ sample complexity ถ้าเรากำหนดให้ $2|H|e^{-2m\epsilon^2}\leq \delta$
+เราจะรับประกันได้ว่า hypothesis $h\in H$ ใด ๆ จะมี $\hat{R}(h)$ แตกต่างจาก $R(h)$ ไม่เกิน $\epsilon$
+ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ ถ้าจำนวนตัวอย่างข้อมูลเป็น
+
+$$
+m\geq\frac{1}{2\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
+$$
+
+
+## Empirical risk minimization
+จาก generalization bound ดังกล่าวจะเห็นว่าหากเราอยากได้ hypothesis $h$ ที่มีอัตราความผิดพลาดโดยเฉลี่ยน้อยที่สุด ($R(h)$ น้อยที่สุด)
+วิธีหนึ่งที่น่าสนใจคือการหา hypothesis ที่มีค่าความผิดพลาดบนตัวอย่างข้อมูลใน $S$ น้อยที่สุด เราเรียกแนวทางการเลือก hypothesis เช่นนี้ว่า _empirical risk minimization_ ซึ่ง หาก $h_S^\text{ERM}$ เป็น hypothesis ที่ได้จากการเลือกดังกล่าว นั่นคือ
+
+$$
+h_S^\text{ERM}=\arg\min_{h\in H}\hat{R}_S(h)
+$$
+
+และให้ $$h^*$$ เป็น hypothesis ที่มีอัตราความผิดพลาดโดยเฉลี่ยหรือ risk น้อยที่สุดใน $H$ เราจะสามารถหา generalization bound ของ $R(h_S^\text{ERM})$ เทียบกับ $R(h^*)$ ได้ดังนี้
+
+$$
+\begin{split}
+R(h_S^\text{ERM}) - R(h^*) & = R(h_S^\text{ERM}) - \hat{R}_S(h_S^\text{ERM}) + \hat{R}_S(h_S^\text{ERM}) - R(h^*)\\
+&\leq R(h_S^\text{ERM}) - \hat{R}_S(h_S^\text{ERM}) + \hat{R}_S(h^*) - R(h^*)\\
+&\leq 2\epsilon
+\end{split}
+$$
+
+เพราะฉะนั้น ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$
+
+$$
+R(h_S^\text{ERM})\leq R(h^*) + \sqrt{\frac{2}{m}(\log|H|+\log\frac{2}{\delta})}
+$$

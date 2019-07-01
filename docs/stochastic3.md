@@ -24,4 +24,9 @@ $$
 
 สำหรับ approximation error นั้นเป็นตัวที่บอกเราว่า $H$ นั้นสามารถประมาณค่า Bayes error $R^*$
 ได้มากแค่ไหน หากเราเลือก $H$ ที่มีความซับซ้อนสูงซึ่งทำให้ $H$ มีขนาดใหญ่ ก็มีแนวโน้มที่จะได้ค่า approximation error
-ที่น้อย ในขณะที่ estimation error นั้นจะสูงตามขนาดของ $H$ 
+ที่น้อย ในขณะที่ estimation error นั้นจะสูงตามขนาดของ $H$ รูปด้านล่างแสดงตัวอย่าง estimation error
+และ approximation error โดยเส้นทึบแทน estimation error และเส้นประแทน approximation error
+
+<p align="center">
+<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/model_selection.png">
+</p>

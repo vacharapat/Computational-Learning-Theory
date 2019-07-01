@@ -106,6 +106,7 @@ $$
 
 $$
 \begin{split}
-\Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]
+\Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
+&=\Pr\left[R(h_{SRM})-\left(\hat{R}(h_{SRM})+\sqrt{\frac{\ln |H_{i(h_{SRM})}|}{2m}}+\sqrt{\frac{\ln i(h_{SRM})}{m}}\right)\right]
 \end{split}
 $$

@@ -119,5 +119,19 @@ $$
 \Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
 &\leq\Pr\left[R(h_{SRM})-C(h_{SRM})>\frac{\epsilon}{2}\right]\\
 &\quad+\Pr\left[C(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right) > \frac{\epsilon}{2}\right]\\
+&\leq 2e^{-m\epsilon^2/2} + \Pr\left[C(h^*)-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right) > \frac{\epsilon}{2}\right]
+\end{split}
+$$
+
+เนื่องจากอัลกอริทึมของเราเลือก $h_{SRM}$ ที่มีค่า $C(h_{SRM})$ น้อยที่สุด ดังนั้น  $$C(h_{SRM})\leq C(h^*)$$
+เมื่อแทนค่า $$C(h^*)=\hat{R}(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right$$
+ก็จะได้เป็น
+
+$$
+\begin{split}
+\Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
+&\leq 2e^{-m\epsilon^2/2} + \Pr[\hat{R}(h^*)-R(h^*)>\frac{\epsilon}{2}]\\
+&\leq 2e^{-m\epsilon^2/2}+e^{-m\epsilon^2/2}\\
+&=3e^{-m\epsilon^2/2}
 \end{split}
 $$

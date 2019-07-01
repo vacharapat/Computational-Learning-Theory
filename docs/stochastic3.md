@@ -85,11 +85,12 @@ $$
 ในการวิเคราะห์ เราสมมติให้ $H = \bigcup_iH_i$ และสำหรับ $h$ ใด ๆ ใน $H$ เราจะให้ $i(h)$
 เป็น index ของ hypothesis space $H_{i(h)}$ ที่เล็กที่สุดที่ครอบคลุม $h$ กล่าวคือ $i(h)=\min_{H_i\ni h}i$
 เราจะเริ่มจากการวิเคราะห์ความน่าจะเป็นที่ตลอดการทำงานของอัลกอริทึม SRM ของเรานี้ จะมี hypothesis $h$
-อย่างน้อยหนึ่งตัวที่มี error $R(h)$ มากกว่า $\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}$ เกิน $\epsilon$ นั่นคือ
+อย่างน้อยหนึ่งตัวที่มี error $R(h)$ มากกว่า $C(h)=\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}$ เกิน $\epsilon$ นั่นคือ
 
 $$
 \begin{split}
-\Pr&\left[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon\right]\\
+\Pr&\left[\exists h\in H: R(h)>C(h)+\epsilon\right]\\
+&=\Pr\left[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon\right]\\
 &\leq\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
 &=\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
 &\leq\sum_{i=1}^\infty\sum_{h\in H_i}\Pr\left[R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
@@ -107,6 +108,6 @@ $$
 $$
 \begin{split}
 \Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
-&=\Pr\left[R(h_{SRM})-\left(\hat{R}(h_{SRM})+\sqrt{\frac{\ln |H_{i(h_{SRM})}|}{2m}}+\sqrt{\frac{\ln i(h_{SRM})}{m}}\right)\right]
+&=\Pr\left[\left(R(h_{SRM})-C(h_{SRM})\right)+\left(C(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)\right) > \epsilon\right]\\
 \end{split}
 $$

@@ -80,7 +80,7 @@ hypothesis $h$ บางตัวใน $H$ ที่มี empirical error $\ha
 
 $$
 \begin{split}
-\Pr[\exists h\in H: |\hat{R}(h)-R(h)|\geq\epsilon] &\leq\sum_{h\in H}\Pr[|\hat{R}(h)-R(h)|\leq\epsilon]\\
+\Pr[\exists h\in H: |\hat{R}(h)-R(h)|\geq\epsilon] &\leq\sum_{h\in H}\Pr[|\hat{R}(h)-R(h)|\geq\epsilon]\\
 &\leq \sum_{h\in H} 2e^{-2m\epsilon^2}\\
 &= 2|H|e^{-2m\epsilon^2}
 \end{split}

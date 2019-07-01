@@ -95,7 +95,7 @@ $$
 &\leq\sum_{i=1}^\infty\sum_{h\in H_i}\Pr\left[R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
 &\leq\sum_{i=1}^\infty\sum_{h\in H_i}e^{-2m\left(\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right)^2}\\
 &\leq\sum_{i=1}^\infty|H_i|e^{-\ln|H_i|-2\ln i-2m\epsilon^2}\\
-&=\sum_{i=1}^\infty |H_i|\dot\frac{1}{|H_i|}\dot\frac{1}{i^2}\dot e^{-2m\epsilon^2}\\
+&=\sum_{i=1}^\infty |H_i|\cdot\frac{1}{|H_i|}\cdot\frac{1}{i^2}\cdot e^{-2m\epsilon^2}\\
 &=e^{-2m\epsilon^2}\sum_{i=1}^\infty\frac{1}{i^2}\\
 &=\frac{\pi^2}{6}e^{-2m\epsilon^2}\\
 &\leq 2e^{-2m\epsilon^2}

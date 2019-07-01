@@ -161,7 +161,7 @@ $$
 \hat{R}(h) + \lambda\|h\|
 $$
 
-น้อยที่สุด นั่นคือถ้า $h_{REG}$ แทน hypothesis ที่เป็นผลลัพธ์ของอัลกอริทึมแบบ regularization เราจะได้ว่า
+น้อยที่สุด หรือกล่าวได้ว่า ถ้าให้ $h_{REG}$ แทน hypothesis ที่เป็นผลลัพธ์ของอัลกอริทึมแบบ regularization $h_{REG}$ จะมีค่าเป็น
 
 $$
 h_{REG}=\arg\min_{h\in H}\hat{R}(h)+\lambda\|h\|

@@ -14,7 +14,7 @@ agnostic-PAC ได้ดังนี้
 โดย $m_0$ เป็น polynomial บน $1/\epsilon$, $1/\delta$, $n$ และ $size(h^*)$
 
 $$
-\Pr[R(h_S)-R(h^*)]\leq\epsilon]\geq 1-\delta
+\Pr[R(h_S)-R(h^*)\leq\epsilon]\geq 1-\delta
 $$
 
 โดย $n$ เป็นขนาดของ input $x\in X$ และ $h^*$ เป็น hypothesis ที่มีค่า error น้อยที่สุดใน $H$ หรือ

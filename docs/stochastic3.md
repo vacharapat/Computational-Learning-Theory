@@ -142,3 +142,7 @@ $$
 $$
 R(h_{SRM})\leq R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}} + \sqrt{\frac{\ln i(h^*)}{m}} + \sqrt{\frac{2}{m}\ln\frac{3}{\delta}}
 $$
+
+สังเกตว่าขอบเขตที่ได้นี้ใกล้เคียงกับขอบเขตของ estimation error ที่วิเคราะห์ได้เมื่อกำหนดให้ใช้ hypothesis space
+$H_{i(h^*)}$ จุดแตกต่างที่สำคัญคือพจน์ $\sqrt{\frac{\ln i(h^*)}{m}}$ ซึ่งเป็นเหมือนราคาที่เพิ่มขึ้นมาเพื่อแลกกับการได้
+hypothesis space $H_{i(h^*)}$ ที่เหมาะสม

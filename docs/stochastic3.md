@@ -92,6 +92,7 @@ $$
 \Pr&\left[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon\right]\\
 &\leq\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
 &=\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
-&\leq\sum_{i=1}^\infty\sum_{h\in H_i}\Pr\left[R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]
+&\leq\sum_{i=1}^\infty\sum_{h\in H_i}\Pr\left[R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
+&\leq\sum_{i=1}^\infty\sum_{h\in H_i}e^{-2m(\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon)^2}
 \end{split}
 $$

@@ -32,5 +32,5 @@ $$R(h^*)-R^*$$
 และ approximation error โดยเส้นทึบแทน estimation error และเส้นประแทน approximation error
 
 <p align="center">
-<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/model_selection.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/model_selection.png">
 </p>

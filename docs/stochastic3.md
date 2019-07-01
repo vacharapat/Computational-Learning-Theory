@@ -89,7 +89,7 @@ $$
 
 $$
 \begin{split}
-\Pr&\left[\exists h\in H: R(h)>C(h)+\epsilon\right]\\
+\Pr&\left[\exists h\in H: R(h)-C(h)>\epsilon\right]\\
 &=\Pr\left[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon\right]\\
 &\leq\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
 &=\Pr\left[\exists i\geq 1,\exists h\in H_i: R(h)-\hat{R}(h)>\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon\right]\\
@@ -109,5 +109,14 @@ $$
 \begin{split}
 \Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
 &=\Pr\left[\left(R(h_{SRM})-C(h_{SRM})\right)+\left(C(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)\right) > \epsilon\right]\\
+\end{split}
+$$
+
+เนื่องจาก สำหรับตัวแปรสุ่ม $X_1$ และ $X_2$ ใด ๆ ถ้า $X_1+X_2>\epsilon$ แสดงว่าจะต้องมี $X_1$ หรือ $X_2$ ที่มีค่ามากกว่า $\epsilon/2$ ดังนั้นเราจึงได้ว่า
+
+$$
+\begin{split}
+\Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]\\
+&\leq\Pr\left[R(h_{SRM})-C(h_{SRM})>\frac{\epsilon}{2}\left]+\Pr\left[C(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right) > \frac{\epsilon}{2}\right]\\
 \end{split}
 $$

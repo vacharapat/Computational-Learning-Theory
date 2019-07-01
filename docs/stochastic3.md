@@ -89,6 +89,7 @@ $$
 
 $$
 \begin{split}
-\Pr[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon]
+\Pr[\exists h\in H:& R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon]\\
+&\leq\Pr[\exists i\geq 1,\exists h\in H_i: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i}|}{2m}}+\sqrt{\frac{\ln i}{m}}+\epsilon]
 \end{split}
 $$

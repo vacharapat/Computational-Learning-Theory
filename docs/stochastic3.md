@@ -30,7 +30,21 @@ $$R(h^*)-R^*$$
 ได้มากแค่ไหน หากเราเลือก $H$ ที่มีความซับซ้อนสูงซึ่งทำให้ $H$ มีขนาดใหญ่ ก็มีแนวโน้มที่จะได้ค่า approximation error
 ที่น้อย ในขณะที่ estimation error นั้นจะสูงตามขนาดของ $H$ รูปด้านล่างแสดงตัวอย่าง estimation error
 และ approximation error โดยเส้นทึบแทน estimation error และเส้นประแทน approximation error
+เมื่อ $h_{Bayes}$ เป็น Bayes hypothesis
 
 <p align="center">
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/model_selection.png">
 </p>
+
+ในการเลือกแบบจำลองนั้น เราต้องเลือก hypothesis space $H$ ที่มี trade-off ระหว่าง estimation error
+และ approximation error นี้ในระดับที่เราพอใจ
+สังเกตว่าเราไม่สามารถประมาณค่า approximation error ได้เลย
+เพราะเราไม่รู้การกระจาย $D$ ของข้อมูล ในขณะที่ค่า estimation error ของ hypothesis ที่ได้จากอัลกอริทึมการเรียนรู้นั้น
+อาจจะประมาณด้วย generalization bound ได้ในบางสถานการณ์
+
+ตัวอย่างหนึ่งของอัลกอริทึมที่สามารถประมาณค่า estimation error ได้ก็คือ empirical risk minimization (ERM)
+ที่เราได้ศึกษากันไปแล้วนั่นเอง ซึ่งสามารถประมาณค่า estimation error ในรูปของขนาดของ $H$ ได้
+อย่างไรก็ดี ในทางปฏิบัตินั้นอัลกอริทึม ERM มักจะไม่ประสบความสำเร็จเนื่องจากขาดการพิจารณาความซับซ้อนของ hypothesis space $H$
+ทำให้เมื่อ $H$ มีความซับซ้อนต่ำ approximation error ก็มีค่ามาก ในขณะที่เมื่อ $H$ มีความซับซ้อนสูงทำให้ขนาดของ $H$ มีค่ามาก
+ขอบเขตของ estimation error ก็จะกว้าง นอกจากนี้ ในหลายสถานการณ์ การหาผลลัพธ์ของ ERM
+ให้ได้นั้นก็เป็นปัญหายากในมุมของประสิทธิภาพของอัลกอริทึมอีกด้วย

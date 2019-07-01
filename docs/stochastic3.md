@@ -85,4 +85,10 @@ $$
 ในการวิเคราะห์ เราสมมติให้ $H = \bigcup_iH_i$ และสำหรับ $h$ ใด ๆ ใน $H$ เราจะให้ $i(h)$
 เป็น index ของ hypothesis space $H_{i(h)}$ ที่เล็กที่สุดที่ครอบคลุม $h$ กล่าวคือ $i(h)=\min_{H_i\ni h}i$
 เราจะเริ่มจากการวิเคราะห์ความน่าจะเป็นที่ตลอดการทำงานของอัลกอริทึม SRM ของเรานี้ จะมี hypothesis $h$
-อย่างน้อยหนึ่งตัวที่มี error $R(h)$ มากกว่า $\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}$ เกิน $\epsilon$
+อย่างน้อยหนึ่งตัวที่มี error $R(h)$ มากกว่า $\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}$ เกิน $\epsilon$ นั่นคือ
+
+$$
+\begin{split}
+\Pr[\exists h\in H: R(h)>\hat{R}(h)+\sqrt{\frac{\ln |H_{i(h)}|}{2m}}+\sqrt{\frac{\ln i(h)}{m}}+\epsilon]
+\end{split}
+$$

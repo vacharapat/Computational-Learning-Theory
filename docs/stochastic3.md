@@ -146,3 +146,8 @@ $$
 สังเกตว่าขอบเขตที่ได้นี้ใกล้เคียงกับขอบเขตของ estimation error ที่วิเคราะห์ได้เมื่อกำหนดให้ใช้ hypothesis space
 $$H_{i(h^*)}$$ จุดแตกต่างที่สำคัญคือพจน์ $$\sqrt{\frac{\ln i(h^*)}{m}}$$ ซึ่งเป็นเหมือนราคาที่เพิ่มขึ้นมาเพื่อแลกกับการได้
 hypothesis space $$H_{i(h^*)}$$ ที่เหมาะสม
+
+----
+Prev: [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic2)
+
+Next:

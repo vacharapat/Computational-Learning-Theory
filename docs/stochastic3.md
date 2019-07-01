@@ -102,10 +102,10 @@ $$
 \end{split}
 $$
 
-คราวนี้ ถ้าให้ $h^*$ เป็น hypothesis ใน $H$ ที่มี error $R(h^*)$ น้อยที่สุด สังเกตว่า
+คราวนี้ ถ้าให้ $$h^*$$ เป็น hypothesis ใน $H$ ที่มี error $$R(h^*)$$ น้อยที่สุด สังเกตว่า
 
 $$
 \begin{split}
-\Pr&\left[R(h_{SRM})-(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}})>\epsilon\right]
+\Pr&\left[R(h_{SRM})-\left(R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}}+\sqrt{\frac{\ln i(h^*)}{m}}\right)>\epsilon\right]
 \end{split}
 $$

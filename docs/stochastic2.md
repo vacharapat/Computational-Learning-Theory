@@ -162,4 +162,4 @@ $$
 ----
 Prev: [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)
 
-Next:
+Next: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)

@@ -17,3 +17,11 @@ R(h)-R^* = \left(R(h) - R(h^*)\right) + \left(R(h^*) - R^*\right)
 $$
 
 เมื่อ $h^*$ เป็น hypothesis ที่มี error น้อยที่สุดใน $H$
+
+เราเรียก $R(h)-R(h^*)$ ว่า estimation error และเรียก $R(h^*)-R^*$ ว่า approximation error
+โดย estimation error นั้นทำการวัด error ของ $h$ เทียบกับ error ที่น้อยที่สุดที่สามารถสร้างได้จาก $H$
+สังเกตว่าในการเรียนรู้แบบ Agnostic PAC นั้น เรามุ่งเป้าไปที่การลด estimation error นี้เป็นหลัก
+
+สำหรับ approximation error นั้นเป็นตัวที่บอกเราว่า $H$ นั้นสามารถประมาณค่า Bayes error $R^*$
+ได้มากแค่ไหน หากเราเลือก $H$ ที่มีความซับซ้อนสูงซึ่งทำให้ $H$ มีขนาดใหญ่ ก็มีแนวโน้มที่จะได้ค่า approximation error
+ที่น้อย ในขณะที่ estimation error นั้นจะสูงตามขนาดของ $H$ 

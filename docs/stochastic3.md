@@ -147,6 +147,31 @@ $$
 $$H_{i(h^*)}$$ จุดแตกต่างที่สำคัญคือพจน์ $$\sqrt{\frac{\ln i(h^*)}{m}}$$ ซึ่งเป็นเหมือนราคาที่เพิ่มขึ้นมาเพื่อแลกกับการได้
 hypothesis space $$H_{i(h^*)}$$ ที่เหมาะสม
 
+## Regularization
+สังเกตว่าในอัลกอริทึม SRM นั้น เราสามารถมองได้ว่าอัลกอริทึมดังกล่าวทำการถ่วงน้ำหนักระหว่าง empirical error
+$\hat{R}(h)$ กับความซับซ้อนของ hypothesis space ซึ่งจะทำให้อัลกอริทึมอาจจะไม่ยอมเลือก hypothesis $h$
+ใน space $H_i$ ที่ซับซ้อนมากถึงแม้ว่า empirical error $\hat{R}(h)$ จะน้อยมากก็ตาม
+เนื่องจาก $H_i$ มีความซับซ้อนมากเกินไป
+
+มีอัลกอริทึมอีกกลุ่มหนึ่งที่ใช้แนวคิดในการถ่วงน้ำหนักด้วยความซับซ้อนของ hypothesis space เข้าไปในฟังก์ชันเป้าหมายเช่นเดียวกับ SRM
+โดยที่พจน์ที่ใช้นำเสนอความซับซ้อนของ hypothesis space นั้นเรียกว่า _regularization_ term
+ซึ่งมักจะนิยามด้วยขนาดหรือ norm ของ hypothesis $h$ นั่นคือ ในอัลกอริทึมกลุ่มนี้ เราจะทำการหา hypothesis $h$ ที่มีค่า
+
+$$
+\hat{R}(h) + \lambda\|h\|
+$$
+
+น้อยที่สุด นั่นคือถ้า $h_{REG}$ แทน hypothesis ที่เป็นผลลัพธ์ของอัลกอริทึมแบบ regularization เราจะได้ว่า
+
+$$
+h_{REG}=\arg\min_{h\in H}\hat{R}(h)+\lambda\|h\|
+$$
+
+โดยเราจะเรียก $\lambda\geq 0$ ว่า _regularization parameter_ ซึ่งใช้สำหรับกำหนดความสัมพันธ์แบบ trade-off
+ระหว่าง empirical error ของ hypothesis $h$ และความซับซ้อนของ $h$
+
+สังเกตว่าอัลกอริทึมกลุ่มนี้สามารถใช้ในกรณีที่ hypothesis space $H$ หลักที่เราสนใจอาจไม่สามารถจัดเป็นลำดับของ hypothesis space ย่อย $H_1\subset H_2\subset \dots$ ก็ได้
+
 ----
 Prev: [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic2)
 

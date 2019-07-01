@@ -135,3 +135,10 @@ $$
 &=3e^{-m\epsilon^2/2}
 \end{split}
 $$
+
+เมื่อกำหนดให้ $3e^{-m\epsilon^2/2}=\delta$ เราจะได้ว่า $\epsilon=\sqrt{\frac{2}{m}\ln\frac{3}{\delta}}$
+ดังนั้นเราจึงได้ว่า
+
+$$
+R(h_{SRM})\leq R(h^*) + \sqrt{\frac{\ln |H_{i(h^*)}|}{2m}} + \sqrt{\frac{\ln i(h^*)}{m}} + \sqrt{\frac{2}{m}\ln\frac{3}{\delta}}
+$$

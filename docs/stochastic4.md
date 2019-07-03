@@ -1,94 +1,165 @@
 {% include lib/mathjax.html %}
-# การเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน
-ในหัวข้อนี้เราจะมาศึกษาการเรียนรู้ในกรณีที่ตัวอย่างข้อมูลที่ได้รับมานั้นมีการรบกวนเกิดขึ้น
-โดยการรบกวนที่เราสนใจคือการรบกวน label ของตัวอย่างข้อมูล ซึ่งอาจจะทำให้ตัวอย่างข้อมูลที่ได้รับมาบางตัวมี
-label ไม่ถูกต้อง เราจะมาวิเคราะห์กันว่าในสถานการณ์เช่นนี้เราจะยังสามารถทำการเรียนรู้ตามกรอบ PAC
-ได้อยู่หรือไม่ และ generalization bound หรือ sample complexity ของการเรียนรู้จะเปลี่ยนไปมากน้อยเท่าไหร่
+# การเรียนรู้แบบ Agnostic PAC
 
-## ปัญหาการเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน
-เราจะมาดูตัวอย่างใน [ปัญหาการเรียนรู้รูปสี่เหลี่ยมขนานแกน](https://vacharapat.github.io/Computational-Learning-Theory/docs/pac2)
-ซึ่งเราเคยวิเคราะห์กันมาแล้วว่าในกรณีที่ตัวอย่างข้อมูลนั้นไม่มีการรบกวน
-เราสามารถเรียนรู้รูปสี่เหลี่ยมขนานแกนได้อย่างมีประสิทธิภาพ
-โดยอัลกอริทึมการเรียนรู้หนึ่งที่ใช้ได้ คือการตอบรูปสี่เหลี่ยมที่เล็กที่สุดที่ครอบคลุม positive example ทั้งหมด
+เนื่องจากในแบบจำลองการจำแนกข้อมูลแบบ stochastic นี้ เราไม่สามารถหา concept เป้าหมายที่มี
+error เป็นศูนย์ได้ ดังนั้น สำหรับ hypothesis space $H$ ใด ๆ เราจะมุ่งเป้าไปที่การหา hypothesis
+ที่มี error ใกล้เคียงกับ Bayes error ให้ได้มากที่สุด หากเราได้เลือก hypothesis space $H$ ที่จะใช้ในการเรียนรู้ได้แล้ว
+เป้าหมายหลักของเราก็จะเป็นการหา hypothesis $h\in H$ ที่มี error $R(h)$ น้อยที่สุดใน $H$ ให้ได้ แนวคิดนี้ทำให้เราสามารถนิยามอัลกอริทึมการเรียนรู้แบบ
+agnostic-PAC ได้ดังนี้
 
-ในคราวนี้สมมติว่าตัวอย่างข้อมูลที่เราได้รับมานั้นอาจถูกรบกวนในลักษณะที่ สำหรับ negative example $(x,0)$ ใด ๆ
-การรบกวนจะไม่ส่งผลให้ข้อมูลเปลี่ยนแปลง แต่สำหรับ positive example $(x, 1)$ ใด ๆ นั้นจะถูกการรบกวนเปลี่ยนให้กลายเป็น
-negative example $(x,0)$ ด้วยความน่าจะเป็น $\eta$ โดย $0<\eta<\frac{1}{2}$
-โดยที่เราไม่สามารถรู้ค่าที่แท้จริงของ $\eta$ ได้ แต่รู้ขอบเขตบน $\eta'$ ซึ่ง $\eta\leq\eta'<\frac{1}{2}$
-รูปด้านล่างแสดงตัวอย่างของข้อมูลที่ถูกรบกวนที่เราได้รับมา เมื่อ $r$ เป็นรูปสี่เหลี่ยมเป้าหมาย
-
-<p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise1.png">
-</p>
-
-## รูปสี่เหลี่ยมที่เล็กที่สุดที่ครอบคลุม positive example
-
-สังเกตว่าในกรณีนี้ เราไม่สามารถรับประกันได้ว่าจะหารูปสี่เหลี่ยมขนานแกนที่สามารถจำแนก positive example และ
-negative example ทั้งหมดออกจากกันได้เสมอ อย่างไรก็ดีเราจะแสดงให้เห็นว่าอัลกอริทึมการเรียนรู้เดิม
-ที่ทำการตอบรูปสี่เหลี่ยมที่เล็กที่สุดที่ครอบคลุม positive example ทั้งหมด (และอาจครอบคลุม negative example บางตัวด้วย)
-ยังสามารถทำการเรียนรู้ปัญหานี้ได้ ตัวอย่างเช่น หากตัวอย่างข้อมูลที่ได้รับมาเป็นดังรูปด้านบน
-อัลกอริทึมของเราจะตอบรูปสี่เหลี่ยม $h$ ดังรูปต่อไปนี้
-
-<p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise2.png">
-</p>
-
-เราจะทำการวิเคราะห์คุณสมบัติของ $h$ ด้วยวิธีการแบบเดิม สมมติให้ $R(h)>\epsilon$ และให้
-$t_1,t_2,t_3,t_4$ เป็นพื้นที่ที่ลากจากขอบด้านหนึ่งของรูปสี่เหลี่ยมเป้าหมาย $r$ เข้ามาด้านในให้มีความน่าจะเป็นที่จะสุ่มหยิบข้อมูลได้ภายในพื้นที่นั้นเท่ากับ $\epsilon/4$ พอดี (พื้นที่สีเทาในรูปด้านล่างแสดงตัวอย่างของพื้นที่ดังกล่าวที่ลากจากขอบด้านล่างของ $r$ เข้ามา)
-
-<p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise3.png">
-</p>
-
-เราจะได้ว่า การที่ $R(h)>\epsilon$ แสดงว่าจะต้องมีขอบของ $h$ อย่างน้อยด้านหนึ่งที่ไม่แตะเข้าไปยังพื้นที่
-$t_i$ ของด้านนั้น นั่นคือ
+สำหรับ hypothesis space $H$ เราจะกล่าวว่าอัลกอริทึม $A$ เป็นอัลกอริทึมการเรียนรู้แบบ agnostic-PAC
+ถ้าสำหรับค่า $\epsilon>0$ และ $\delta>0$ ใด ๆ และสำหรับการกระจายของข้อมูล $D$ บน $X\times Y$ ใด ๆ
+เมื่ออัลกอริทึม $A$ รับตัวอย่างข้อมูล $$S=\{(x_1,y_1),\dots,(x_m,y_m)\}$$ จาก $D$
+อัลกอริทึม $A$ จะให้ผลลัพธ์เป็น hypothesis $h_S$ ที่สอดคล้องกับเงื่อนไขต่อไปนี้ เมื่อ $m\geq m_0$
+โดย $m_0$ เป็น polynomial บน $1/\epsilon$, $1/\delta$, $n$ และ $size(h^*)$
 
 $$
-\Pr[R(h)>\epsilon] \leq\Pr[\exists i\in\{1,2,3,4\}: h\cap t_i = \emptyset]\leq \sum_{i=1}^4\Pr[h\cap t_i = \emptyset]
+\Pr[R(h_S)-R(h^*)\leq\epsilon]\geq 1-\delta
 $$
 
-คราวนี้เมื่อพิจารณาที่พื้นที่ $t_i$ แต่ละด้าน การที่รูปสี่เหลี่ยม $h$ ที่เป็นคำตอบของอัลกอริทึมนั้นไม่ซ้อนทับกับ $t_i$
-แสดงว่าในตัวอย่างข้อมูลของเราไม่มี positive example สักตัวที่ตกอยู่ในพื้นที่ $t_i$ เลย
-หากเราพิจารณาการสุ่มตัวอย่างข้อมูล $x$ แต่ละตัว สังเกตว่าในสถานการณ์นี้ การที่ตัวอย่างข้อมูล $x$ ของเราไม่ได้ปรากฏเป็น
-positive example ใน $t_i$ อาจไม่ใช่เพราะเราสุ่มได้ $x$ อยู่นอกพื้นที่ $t_i$ เพียงอย่างเดียว
-แต่อาจเกิดจากการสุ่มได้ $x$ ที่อยู่ในพื้นที่ $t_i$ แต่ถูกรบกวนจนกลายเป็น negative example ในพื้นที่ $t_i$ แทนก็ได้
-(เช่น negative example ในพื้นที่สีเทาในรูปด้านบน)
-ดังนั้น สำหรับตัวอย่างข้อมูล $x$ แต่ละตัว เราสามารถหาความน่าจะเป็นที่ $x$ ไม่ได้ปรากฏเป็น positive example
-ในพื้นที่ $t_i$ แก่เราได้เป็น
+โดย $n$ เป็นขนาดของ input $x\in X$ และ $h^*$ เป็น hypothesis ที่มีค่า error น้อยที่สุดใน $H$ หรือ
 
 $$
-(1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta\leq (1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta' = 1-\frac{\epsilon(1-\eta')}{4}
+h^* = \arg\min_{h\in H}R(h)
 $$
 
-ดังนั้น ความน่าจะเป็นที่ตัวอย่างข้อมูลทั้ง $m$ ตัวจะไม่ปรากฏเป็น positive example ในพื้นที่ $t_i$ เลยสักตัวเดียว จะมีค่าเป็น
+ถ้าอัลกอริทึม $A$ สามารถให้ผลลัพธ์ดังกล่าวได้โดยใช้เวลาทำงานเป็น polynomial บน $1/\epsilon$,
+$1/\delta$, $n$ และ $size(h^*)$ เราจะเรียกว่าเป็นอัลกอริทึมการเรียนรู้แบบ agnostic ที่มีประสิทธิภาพ
+
+## Inconsistent Hypothesis
+ในการเรียนรู้บน stochastic scenario นี้ เราไม่สามารถรับประกันได้ว่าจะสามารถหา hypothesis $h\in H$
+ที่สอดคล้องกับตัวอย่างข้อมูลทั้งหมดใน $S$ ได้เสมอ อย่างไรก็ดี เราได้เห็นตัวอย่างใน [การเรียนรู้ Boolean Conjunction ด้วย Inconsistent Hypothesis](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite3)
+มาแล้วว่า hypothesis ที่ไม่ได้สอดคล้องกับตัวอย่างข้อมูลทั้งหมด แต่มีความผิดพลาดบนตัวอย่างข้อมูลน้อย
+ก็มีประโยชน์สำหรับเราได้เช่นกัน
+
+ในหัวข้อนี้เราจะแสดงให้เห็นว่าในความเป็นจริง สำหรับ hypothesis $h\in H$ ใด ๆ
+เราพอที่จะสามารถหาขอบเขตของ error $R(h)$ จาก empirical error $\hat{R}(h)$ ได้
+เมื่อ $\hat{R}(h)$ มีนิยามดังนี้
+
+สำหรับเซตของตัวอย่างข้อมูล $$S=\{(x_1,y_1),\dots,(x_m,y_m)\}$$
 
 $$
-\Pr[h\cap t_i=\emptyset] \leq \left(1-\frac{\epsilon(1-\eta')}{4}\right)^m\leq e^{-m\epsilon(1-\eta')/4}
+\hat{R}(h)=\frac{1}{m}|\{(x,y)\in S: h(x)\neq y\}| = \frac{1}{m}\sum_{i=1}^m1_{h(x_i)\neq y}
 $$
 
-ดังนั้น
+เครื่องมือที่เราจะใช้ในการวิเคราะห์ขอบเขตดังกล่าวคือ Hoeffding's inequality ซึ่งกล่าวไว้ดังนี้
+
+**Hoeffding's inequality**
+ให้ $X_1,\dots,X_m$ เป็ตัวแปรสุ่มที่เป็นอิสระกัน $m$ ตัวโดยที่ $X_i$ มีค่าอยู่ในช่วง $[a_i,b_i]$ ถ้าให้ $S_m=\sum_{i=1}^mX_i$ เราจะได้ว่า
+
+$$
+\Pr[S_m-\mathbb{E}[S_m]\geq\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
+$$
+
+และ
+
+$$
+\Pr[S_m-\mathbb{E}[S_m]\leq -\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
+$$
+
+จาก Hoeffding's inequality เราจะได้ว่าเมื่อเราพิจารณาตัวอย่างข้อมูล $S$ และทำการเลือก hypothesis $h\in H$ ที่มีอัตราผิดพลาดบน $S$ เท่ากับ $\hat{R}(h)$ เราสามารถวิเคราะห์โอกาสที่ $h$ จะมีอัตราผิดพลาดเฉลี่ยจริง $R(h)$ แตกต่างจาก $\hat{R}(h)$ มากได้ดังนี้
+
+$$
+\Pr[\hat{R}(h)-R(h)\geq\epsilon]\leq e^{-2m\epsilon^2}
+$$
+
+และ
+
+$$
+\Pr[\hat{R}(h)-R(h)\leq -\epsilon]\leq e^{-2m\epsilon^2}
+$$
+
+ซึ่งจาก union bound เราสามารถสรุปได้เป็น
+
+$$
+\Pr[|\hat{R}(h)-R(h)|\geq \epsilon]\leq 2e^{-2m\epsilon^2}
+$$
+
+นั่นแสดงว่าหาก hypothesis space $H$ มีขนาดจำกัด เราสามารถจำกัดขอบเขตของความน่าจะเป็นที่จะมี
+hypothesis $h$ บางตัวใน $H$ ที่มี empirical error $\hat{R}(h)$ แตกต่างจาก $R(h)$ เกิน $\epsilon$ ได้ดังนี้
 
 $$
 \begin{split}
-\Pr[R(h)>\epsilon] &\leq \sum_{i=1}^4\Pr[h\cap t_i = \emptyset]\\
-&\leq 4 e^{-m\epsilon(1-\eta')/4}
+\Pr[\exists h\in H: |\hat{R}(h)-R(h)|\geq\epsilon] &\leq\sum_{h\in H}\Pr[|\hat{R}(h)-R(h)|\geq\epsilon]\\
+&\leq \sum_{h\in H} 2e^{-2m\epsilon^2}\\
+&= 2|H|e^{-2m\epsilon^2}
 \end{split}
 $$
 
-ซึ่งถ้าเรากำหนดให้ $4e^{-m\epsilon(1-\eta')/4}\leq\delta$ เราก็จะได้ sample complexity สำหรับการเรียนรู้ในสถานการณ์นี้ได้ว่า
-เราสามารถหารูปสี่เหลี่ยมขนานแกน $h$ ที่ $R(h)\leq\epsilon$ ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ เมื่อมีจำนวนตัวอย่างข้อมูล $m$ ดังนี้
+ถ้าเรากำหนดให้
+$2|H|e^{-2m\epsilon^2}=\delta$
+เราจะได้
 
 $$
-m\geq \frac{4}{\epsilon(1-\eta')}\ln\frac{4}{\delta}
+\epsilon = \sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
 $$
 
-หรือสามารถวิเคราะห์ในรูปแบบของ generalization error ได้ว่า ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$
+นั่นคือ ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ hypothesis $h$ ทุกตัวใน $H$ จะมีขอบเขตของ error ดังนี้
 
 $$
-R(h)\leq\frac{4}{m(1-\eta')}\ln\frac{4}{\delta}
+R(h)\leq \hat{R}_S(h)+\sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
+$$
+
+หรือในมุมของ sample complexity ถ้าเรากำหนดให้ $2|H|e^{-2m\epsilon^2}\leq \delta$
+เราจะรับประกันได้ว่า hypothesis $h\in H$ ใด ๆ จะมี $\hat{R}(h)$ แตกต่างจาก $R(h)$ ไม่เกิน $\epsilon$
+ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ ถ้าจำนวนตัวอย่างข้อมูลเป็น
+
+$$
+m\geq\frac{1}{2\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
+$$
+
+
+## Empirical risk minimization
+เนื่องจากเราสามารถบีบความแตกต่างระหว่าง empirical error กับ expected error ได้
+จะเห็นว่าหากเราอยากได้ hypothesis $h$ ที่มีอัตราความผิดพลาดโดยเฉลี่ยน้อยที่สุด ($R(h)$ น้อยที่สุด)
+วิธีหนึ่งที่น่าสนใจคือการหา hypothesis ที่มีค่าความผิดพลาดบนตัวอย่างข้อมูลใน $S$ น้อยที่สุด เราเรียกแนวทางการเลือก hypothesis เช่นนี้ว่า _empirical risk minimization_ ซึ่ง หาก $h_{ERM}$ เป็น hypothesis ที่ได้จากการเลือกดังกล่าว นั่นคือ
+
+$$
+h_{ERM}=\arg\min_{h\in H}\hat{R}(h)
+$$
+
+และให้ $$h^*$$ เป็น hypothesis ที่มีอัตราความผิดพลาดโดยเฉลี่ยหรือ risk น้อยที่สุดใน $H$ เราจะสามารถหา generalization bound ของ $R(h_{ERM})$ เทียบกับ $R(h^*)$ ได้ดังนี้
+
+$$
+\begin{split}
+R(h_{ERM}) - R(h^*) & = R(h_{ERM}) - \hat{R}(h_{ERM}) + \hat{R}(h_{ERM}) - R(h^*)\\
+&\leq R(h_{ERM}) - \hat{R}(h_{ERM}) + \hat{R}(h^*) - R(h^*)\\
+&\leq 2\epsilon
+\end{split}
+$$
+
+โดยจากบรรทัดที่ 1 มาบรรทัดที่ 2 เราใช้ความจริงที่ว่า $\hat{R}(h_{ERM})\leq \hat{R}(h^*)$
+เนื่องจากเราเลือก $h_{ERM}$ ที่มี empirical error น้อยที่สุด
+
+เพราะฉะนั้น ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$
+
+$$
+R(h_{ERM})\leq R(h^*) + \sqrt{\frac{2}{m}(\ln|H|+\ln\frac{2}{\delta})}
+$$
+
+หรือกล่าวได้อีกอย่างว่า ถ้าจำนวนตัวอย่างข้อมูลเป็น
+
+$$
+m\geq\frac{1}{2\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
+$$
+
+ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ อัลกอริทึม estimation risk minimization จะให้ผลลัพธ์เป็น hypothesis $h_{ERM}$ ที่มี error
+
+$$
+R(h_{ERM})\leq R(h^*)+2\epsilon
+$$
+
+หากเราต้องการให้
+$$
+R(h_{ERM})\leq R(h^*)+\epsilon
+$$
+ด้วยความน่าจะเป็นไม่เกิน $1-\delta$ เราก็ต้องใช้จำนวนตัวอย่างข้อมูลเป็น
+
+$$
+m\geq\frac{2}{\epsilon^2}(\ln|H| +\ln\frac{2}{\delta})
 $$
 
 ----
-Prev: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
+Prev: [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
 
-Next:
+Next: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic5)

@@ -13,7 +13,8 @@
 1. [Decision Tree](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite5)
 
 ### Stochastic Scenario
-1. [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)
-1. [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic2)
-1. [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
-1. [การเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic4)
+1. [การเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)
+1. [การเรียนรู้แบบ PAC เมื่อมีการรบกวน](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic2)
+1. [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
+1. [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic4)
+1. [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic5)

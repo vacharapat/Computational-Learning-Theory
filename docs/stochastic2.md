@@ -26,6 +26,20 @@ $$
 
 และสำหรับ hypothesis เป้าหมาย $c$ ที่ $R(c)=0$ เราจะได้ว่า $d(c)=\eta$
 
+ถัดมา หากเรากำหนดค่า $\epsilon>0$ เป็นขอบเขตของ error ที่ต้องการจำกัด
+เมื่อพิจารณา hypothesis $h\in H$ ที่ $R(h)>\epsilon$ เราจะได้ว่า
+
+$$
+\begin{split}
+d(h) &=\eta + R(h)(1-2\eta)\\
+&\geq\eta+\epsilon(1-2\eta)\\
+&\geq\eta+\epsilon(1-2\eta')
+\end{split}
+$$
+
+เนื่องจาก $d(c)=\eta$ ดังนั้นเราจึงได้ว่า สำหรับ hypothesis $h\in H$ ใด ๆ ที่
+$R(h)>\epsilon$ แสดงว่า $d(h)-d(c)\geq\epsilon(1-2\eta')$
+
 ----
 Prev: [การเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)
 

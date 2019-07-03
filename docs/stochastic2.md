@@ -89,7 +89,9 @@ $$
 \end{split}
 $$
 
-เมื่อเรากำหนดให้ $|H|e^{-2m\epsilon'^2}\leq\frac{\delta}{2}$ ก็จะได้ว่า
+เมื่อเรากำหนดให้
+$$|H|e^{-2m\epsilon'^2}\leq\frac{\delta}{2}$$
+ก็จะได้ว่า
 
 $$
 m\geq\frac{1}{2\epsilon'^2}(\ln|H|+\ln\frac{2}{\delta})

@@ -57,13 +57,13 @@ positive example ใน $t_i$ อาจไม่ใช่เพราะเร�
 ในพื้นที่ $t_i$ แก่เราได้เป็น
 
 $$
-(1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta\leq (1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta' = 1-(1-\eta')\frac{\epsilon}{4}
+(1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta\leq (1-\frac{\epsilon}{4}) + \frac{\epsilon}{4}\eta' = 1-\frac{\epsilon(1-\eta')}{4}
 $$
 
 ดังนั้น ความน่าจะเป็นที่ตัวอย่างข้อมูลทั้ง $m$ ตัวจะไม่ปรากฏเป็น positive example ในพื้นที่ $t_i$ เลยสักตัวเดียว จะมีค่าเป็น
 
 $$
-\Pr[h\cap t_i=\emptyset] \leq \left(1-(1-\eta')\frac{\epsilon}{4}\right)^m\leq e^{-m\epsilon(1-\eta')/4}
+\Pr[h\cap t_i=\emptyset] \leq \left(1-\frac{\epsilon(1-\eta')}{4}\right)^m\leq e^{-m\epsilon(1-\eta')/4}
 $$
 
 ดังนั้น

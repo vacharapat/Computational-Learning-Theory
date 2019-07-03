@@ -87,3 +87,8 @@ $$
 $$
 R(h)\leq\frac{4}{m(1-\eta')}\ln\frac{4}{\delta}
 $$
+
+----
+Prev: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
+
+Next:

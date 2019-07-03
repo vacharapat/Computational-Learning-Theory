@@ -148,4 +148,4 @@ decision tree นี้ก็สามารถเรียนรู้ได้
 ----
 Prev: [ปัญหาการเรียนรู้ Decision List](https://vacharapat.github.io/Computational-Learning-Theory/docs/finite4)
 
-Next: [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)
+Next: [การเรียนรู้รูปสี่เหลี่ยมขนานแกนเมื่อมีการรบกวน](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic1)

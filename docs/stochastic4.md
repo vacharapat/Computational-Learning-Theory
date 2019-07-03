@@ -42,21 +42,6 @@ $$
 \hat{R}(h)=\frac{1}{m}|\{(x,y)\in S: h(x)\neq y\}| = \frac{1}{m}\sum_{i=1}^m1_{h(x_i)\neq y}
 $$
 
-เครื่องมือที่เราจะใช้ในการวิเคราะห์ขอบเขตดังกล่าวคือ Hoeffding's inequality ซึ่งกล่าวไว้ดังนี้
-
-**Hoeffding's inequality**
-ให้ $X_1,\dots,X_m$ เป็นตัวแปรสุ่มที่เป็นอิสระกัน $m$ ตัวโดยที่ $X_i$ มีค่าอยู่ในช่วง $[a_i,b_i]$ ถ้าให้ $S_m=\sum_{i=1}^mX_i$ เราจะได้ว่า
-
-$$
-\Pr[S_m-\mathbb{E}[S_m]\geq\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
-$$
-
-และ
-
-$$
-\Pr[S_m-\mathbb{E}[S_m]\leq -\epsilon]\leq e^{-2\epsilon^2/\sum_{i=1}^m(b_i-a_i)^2}
-$$
-
 จาก Hoeffding's inequality เราจะได้ว่าเมื่อเราพิจารณาตัวอย่างข้อมูล $S$ และทำการเลือก hypothesis $h\in H$ ที่มีอัตราผิดพลาดบน $S$ เท่ากับ $\hat{R}(h)$ เราสามารถวิเคราะห์โอกาสที่ $h$ จะมีอัตราผิดพลาดเฉลี่ยจริง $R(h)$ แตกต่างจาก $\hat{R}(h)$ มากได้ดังนี้
 
 $$

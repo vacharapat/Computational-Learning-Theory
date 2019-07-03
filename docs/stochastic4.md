@@ -20,3 +20,27 @@ negative example $(x,0)$ ด้วยความน่าจะเป็น $\e
 <p align="center">
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise1.png">
 </p>
+
+สังเกตว่าในกรณีนี้ เราไม่สามารถรับประกันได้ว่าจะหารูปสี่เหลี่ยมขนานแกนที่สามารถจำแนก positive example และ
+negative example ทั้งหมดออกจากกันได้เสมอ อย่างไรก็ดีเราจะแสดงให้เห็นว่าอัลกอริทึมการเรียนรู้เดิม
+ที่ทำการตอบรูปสี่เหลี่ยมที่เล็กที่สุดที่ครอบคลุม positive example ทั้งหมด (และอาจครอบคลุม negative example บางตัวด้วย)
+ยังสามารถทำการเรียนรู้ปัญหานี้ได้ ตัวอย่างเช่น หากตัวอย่างข้อมูลที่ได้รับมาเป็นดังรูปด้านบน
+อัลกอริทึมของเราจะตอบรูปสี่เหลี่ยม $h$ ดังรูปต่อไปนี้
+
+<p align="center">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise2.png">
+</p>
+
+เราจะทำการวิเคราะห์คุณสมบัติของ $h$ ด้วยวิธีการแบบเดิม สมมติให้ $R(h)>\epsilon$ และให้
+$t_1,t_2,t_3,t_4$ เป็นพื้นที่ที่ลากจากขอบด้านหนึ่งของรูปสี่เหลี่ยมเป้าหมาย $r$ เข้ามาด้านในให้มีความน่าจะเป็นที่จะสุ่มหยิบข้อมูลได้ภายในพื้นที่นั้นเท่ากับ $\epsilon/4$ พอดี (พื้นที่สีเทาในรูปด้านล่างแสดงตัวอย่างของพื้นที่ดังกล่าวที่ลากจากขอบด้านล่างของ $r$ เข้ามา)
+
+<p align="center">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec_noise3.png">
+</p>
+
+เราจะได้ว่า การที่ $R(h)>\epsilon$ แสดงว่าจะต้องมีขอบของ $h$ อย่างน้อยด้านหนึ่งที่ไม่แตะเข้าไปยังพื้นที่
+$t_i$ ของด้านนั้น นั่นคือ
+
+$$
+\Pr[R(h)>\epsilon] \leq\Pr[\exists i\in\{1,2,3,4\}: h\cap t_i = \emptyset]\leq \sum_{i=1}^4\Pr[h\cap t_i = \emptyset]
+$$

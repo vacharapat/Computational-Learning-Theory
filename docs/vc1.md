@@ -47,4 +47,21 @@ $$
 เมื่อเราสามารถหาขอบเขตของความน่าจะเป็นของเหตุการณ์ย่อย $B_i$ แต่ละตัวได้เท่ากัน จึงเป็นที่มาที่ทำให้มีค่าของ
 $|H|$ ปรากฏใน generalization bound
 
-อย่างไรก็คือ หาก
+อย่างไรก็ดี หากเหตุการณ์ $B_i$ ต่าง ๆ นั้นมีส่วนซ้อนทับกันมาก การใช้ union bound นี้จะทำให้ได้ขอบเขตที่ห่างจากความจริงเป็นอย่างมาก
+ตัวอย่างเช่น หาก $B_1$ และ $B_2$ เป็นเหตุการณ์ที่มีส่วนใน sample space ที่ซ้อนทับกันมากดังแสดงในรูปต่อไปนี้
+
+<p align="center">
+<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/union1.png">
+</p>
+
+จะเห็นว่าความน่าจะเป็นของเหตุการณ์ $B_1\cup B_2$ นั้นแสดงได้ด้วยพื้นที่ดังรูปต่อไปนี้
+
+<p align="center">
+<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/union2.png">
+</p>
+
+ในขณะที่ขอบเขตของความน่าจะเป็นที่ได้จาก union bound นั้นแสดงได้ดังรูปต่อไปนี้
+
+<p align="center">
+<img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/union3.png">
+</p>

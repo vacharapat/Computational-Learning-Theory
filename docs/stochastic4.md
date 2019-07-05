@@ -82,7 +82,7 @@ $$
 นั่นคือ ด้วยความน่าจะเป็นไม่น้อยกว่า $1-\delta$ hypothesis $h$ ทุกตัวใน $H$ จะมีขอบเขตของ error ดังนี้
 
 $$
-R(h)\leq \hat{R}_S(h)+\sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
+R(h)\leq \hat{R}(h)+\sqrt{\frac{1}{2m}(\ln|H|+\ln\frac{2}{\delta})}
 $$
 
 หรือในมุมของ sample complexity ถ้าเรากำหนดให้ $2|H|e^{-2m\epsilon^2}\leq \delta$

@@ -18,3 +18,6 @@
 1. [Bayes Error](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic3)
 1. [การเรียนรู้แบบ Agnostic PAC](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic4)
 1. [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic5)
+
+### VC Dimension
+1. [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc1)

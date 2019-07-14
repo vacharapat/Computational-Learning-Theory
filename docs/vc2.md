@@ -104,6 +104,12 @@ $$
 <img width="250" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/convexset.png">
 </p>
 
+ถึงแม้ว่าเราสามารถคำนวณ growth function ได้สำหรับ hypothesis space ในตัวอย่างทั้งสามนี้
+ในความเป็นจริงแล้ว hypothesis space ที่ใช้จริงในทางปฏิบัติมักจะคำนวณ growth function ได้ยาก
+อย่างไรก็ดี ในการวิเคราะห์ความสามารถในการเรียนรู้นั้น เราไม่จำเป็นต้องรู้ growth function อย่างชัดเจน
+หากเรารู้ขอบเขตของ growth function ก็สามารถนำขอบเขตนั้นไปวิเคราะห์แทนได้เช่นกัน
+เราจะได้เห็นกันต่อไปว่าเราสามารถแสดงขอบเขตของ growth function ให้อยู่ในรูปของ VC-dimension ได้
+
 ----
 Prev: [Dichotomy](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc1)
 

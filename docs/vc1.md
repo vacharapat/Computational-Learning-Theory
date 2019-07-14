@@ -102,3 +102,8 @@ $x_1,x_2,x_3,x_4$ เป็นจุดสี่จุดบนระนาบ�
 <p align="center">
 <img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dichotomy.png">
 </p>
+
+----
+Prev: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic5)
+
+Next:

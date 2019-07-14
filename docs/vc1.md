@@ -94,3 +94,11 @@ $$
 หรือกล่าวได้ว่า dichotomy ของ $H$ คือเซตของ dichotomy ที่เป็นไปได้ทั้งหมดที่จำแนกจาก hypothesis ใน $H$
 สังเกตว่าหากเราพิจารณา input space ให้เหลือเพียง
 $$\{x_1,\dots,x_m\}$$ เราสามารถมอง $H(x_1,\dots,x_m)$ เป็น hypothesis space เช่นเดียวกับ $H$
+ตัวอย่างเช่น ถ้าให้ $H$ เป็นเซตของ linear classifier บนระนาบสองมิติ และให้ตัวอย่างข้อมูล
+$x_1,x_2,x_3,x_4$ เป็นจุดสี่จุดบนระนาบดังรูปต่อไปนี้ รูปด้านซ้ายแสดงตัวอย่าง dichotomy หนึ่งของ $H(x_1,x_2,x_3,x_4)$
+ที่จำแนกได้ด้วย hypothesis $h$ ที่แทนด้วยเส้นตรงในรูป ในขณะที่รูปด้านขวาแทนตัวอย่าง dichotomy ที่ไม่มีใน $H(x_1,x_2,x_3,x_4)$
+(นั่นคือ ไม่สามารถจำแนกได้ด้วยเส้นตรงใด ๆ บนระนาบ)
+
+<p align="center">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dichotomy1.png">
+</p>

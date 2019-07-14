@@ -40,3 +40,23 @@ $$
 ต่อจากนี้เราลองมาดูการวิเคราะห์ VC-dimension ของตัวอย่าง hypothesis space ง่าย ๆ จำนวนหนึ่งเพื่อให้เข้าใจมากขึ้น
 
 ## Positive rays
+ในกรณีของ $H$ ที่เป็นเซตของ positive rays สังเกตว่าสำหรับตัวอย่างข้อมูลเพียงจุดเดียว เราสามารถสร้าง hypothesis $h$
+ที่ทำให้ตัวอย่างข้อมูลดังกล่าวมี label เป็น 1 หรือ 0 ก็ได้ดังรูปต่อไปนี้ แสดงว่า VC-dimension ของ positive rays
+มีค่าไม่น้อยกว่า 1 หรือ $d_H\geq 1$
+
+<p align="center">
+<img width="400" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/positiverays_vc1.png">
+</p>
+
+สำหรับตัวอย่างข้อมูลที่มีสองจุด $x_1$ และ $x_2$ ถ้า $x_1=x_2$ เราจะได้ว่า label ของทั้งสองจุดนี้จะต้องเหมือนกันเสมอ นั่นทำให้ dichotomy ที่สองจุดนี้มี label ต่างกันไม่สามารถเกิดขึ้นได้
+แสดงว่า $H$ ไม่ shatter เซตของจุดทั้งคู่นี้ สำหรับกรณีที่ $x_1\neq x_2$ สมมติให้ $x_1<x_2$ จะเห็นว่าเราไม่สามารถ
+หา positive rays ที่ทำให้ได้ dichotomy ตามรูปต่อไปนี้ได้เลย ดังนั้น $H$ ก็ไม่ shatter เซตของจุดทั้งคู่นี้เช่นกัน
+จากตรงนี้จะเห็นว่าเซตของตัวอย่างข้อมูลจำนวนสองจุดใด ๆ ไม่มีทางถูก shatter จาก $H$ ได้เลย
+นั่นแสดงว่า $d_H<2$
+
+<p align="center">
+<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/positiverays_vc2.png">
+</p>
+
+เนื่องจาก $d_H\heq 1$ และ $d_H<2$ เราจึงได้ว่าเมื่อ $H$ เป็นเซตของ positive rays
+$H$ จะมี VC-dimension เป็น $d_H=1$

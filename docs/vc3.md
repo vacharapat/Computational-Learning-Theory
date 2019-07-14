@@ -18,5 +18,5 @@ $m$ ตัวของ hypothesis space $H$ ใด ๆ ได้จากค่�
 นั่นคือ ถ้าให้ $d_H$ แทน VC-dimension ของ $H$
 
 $$
-d_h = \max_{S shattered by H}|S|
+d_h = \max_{S \text{ shattered by } H}|S|
 $$

@@ -100,5 +100,5 @@ $x_1,x_2,x_3,x_4$ เป็นจุดสี่จุดบนระนาบ�
 (นั่นคือ ไม่สามารถจำแนกได้ด้วยเส้นตรงใด ๆ บนระนาบ)
 
 <p align="center">
-<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dichotomy.png">
+<img width="500" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/dichotomy.png">
 </p>

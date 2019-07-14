@@ -92,3 +92,5 @@ H(x_1,\dots,x_m) = \{(h(x_1),\dots,h(x_m)):h\in H\}
 $$
 
 หรือกล่าวได้ว่า dichotomy ของ $H$ คือเซตของ dichotomy ที่เป็นไปได้ทั้งหมดที่จำแนกจาก hypothesis ใน $H$
+สังเกตว่าหากเราพิจารณา input space ให้เหลือเพียง
+$$\{x_1,\dots,x_m\}$$ เราสามารถมอง $H(x_1,\dots,x_m)$ เป็น hypothesis space เช่นเดียวกับ $H$

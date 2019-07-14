@@ -58,5 +58,5 @@ $$
 <img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/positiverays_vc2.png">
 </p>
 
-เนื่องจาก $d_H\heq 1$ และ $d_H<2$ เราจึงได้ว่าเมื่อ $H$ เป็นเซตของ positive rays
+เนื่องจาก $d_H\geq 1$ และ $d_H<2$ เราจึงได้ว่าเมื่อ $H$ เป็นเซตของ positive rays
 $H$ จะมี VC-dimension เป็น $d_H=1$

@@ -103,3 +103,8 @@ $$
 <p align="center">
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/convexset.png">
 </p>
+
+----
+Prev: [Dichotomy](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc1)
+
+Next:

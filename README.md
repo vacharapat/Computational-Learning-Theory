@@ -21,3 +21,4 @@
 
 ### VC Dimension
 1. [Dichotomy](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc1)
+1. [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc2)

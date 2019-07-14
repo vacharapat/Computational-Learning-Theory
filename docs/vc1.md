@@ -109,4 +109,4 @@ $x_1,x_2,x_3,x_4$ เป็นจุดสี่จุดบนระนาบ�
 ----
 Prev: [การเลือกแบบจำลอง](https://vacharapat.github.io/Computational-Learning-Theory/docs/stochastic5)
 
-Next:
+Next: [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc2)

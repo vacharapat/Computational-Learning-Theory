@@ -77,7 +77,13 @@ $$
 
 นอกจากนี้ สำหรับ $d\geq 1$ ใด ๆ หาก $m=1$ เราก็จะมีจำนวน dichotomy ได้สูงสุดเท่ากับ 2 แบบเสมอ
 
-คราวนี้พิจารณาเมื่อ $m>1$ และ $d\geq 1$ สมมติว่าเราแจกแจง dichotomy ที่เป็นไปได้ทั้ง $B(m,d)$ แบบออกมาเป็นตารางต่อไปนี้
+คราวนี้พิจารณาเมื่อ $m>1$ และ $d\geq 1$ สมมติว่าเราแจกแจง dichotomy ที่เป็นไปได้ทั้ง $B(m,d)$ แบบออกมาเป็นตารางด้านล่างนี้
+โดยแบ่ง dichotomy ทั้งหมดออกเป็นสามกลุ่ม ได้แก่ $S_1$ ประกอบด้วย dichotomy ที่เมื่อพิจารณา
+dichotomy ย่อยของตัวอย่างข้อมูล $x_1,\dots,x_{m-1}$ จะพบว่าปรากฏเพียงครั้งเดียว
+dichotomy ที่อยู่นอก $S_1$ จะสามารถจับเป็นคู่ที่มี dichotomy ย่อยของ $x_1,\dots,x_{m-1}$ เหมือนกันและมีเพียง label ของ
+$x_m$ ที่ต่างกันได้
+เราให้ $S_2^0$ ประกอบด้วย dichotomy ที่ไม่อยู่ใน $S_1$ ที่มี label ของ $x_m$ เป็น 0
+และให้ $S_2^1$ ประกอบด้วย dichotomy ที่ไม่อยู่ใน $S_1$ ที่มี label ของ $x_m$ เป็น 1
 
 <p align="center">
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/growth_recursion_table.png">

@@ -88,3 +88,12 @@ $x_m$ ที่ต่างกันได้
 <p align="center">
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/growth_recursion_table.png">
 </p>
+
+สมมติให้จำนวน dichotomy ใน $S_1$ มีทั้งสิ้น $\alpha$ แบบ และให้จำนวน dichotomy ใน $S_2^0$ มีทั้งสิ้น $\beta$ แบบ
+เนื่องจาก dichotomy แต่ละแบบใน $S_2^0$ จะมีคู่ที่เหมือนกันทั้งหมดยกเว้น label ของ $x_m$ อยู่ใน $S_2^1$
+ดังนั้นจำนวน dichotomy ใน $S_2^1$ ก็จะเท่ากับ $\beta$ ด้วยเช่นกัน
+จากตรงนี้เราจะได้ว่าจำนวน dichotomy ทั้งหมดในตารางนี้จะมีค่าเป็น
+
+$$
+B(m,d) = \alpha + 2\beta
+$$

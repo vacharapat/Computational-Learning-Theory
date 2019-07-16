@@ -141,6 +141,8 @@ $$
 B(m,d) &\leq B(m-1,d)+B(m-1,d-1)\\
 &\leq \sum_{i=0}^d{m-1 \choose i} + \sum_{i=0}^{d-1}{m-1\choose i}\\
 &=1 + \sum_{i=1}^d{m-1\choose i} + \sum_{i=1}^d{m-1\choose i-1}\\
-&=1 + \sum_{i=1}^d\left[{m-1\choose i} + {m-1\choose i-1}\right]
+&=1 + \sum_{i=1}^d\left[{m-1\choose i} + {m-1\choose i-1}\right]\\
+&=1 + \sum_{i=1}^d {m\choose i}\\
+&=\sum_{i=0}^d{m\choose i}
 \end{split}
 $$

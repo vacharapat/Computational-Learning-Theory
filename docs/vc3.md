@@ -61,3 +61,21 @@ $$
 
 เนื่องจาก $d_H\geq 1$ และ $d_H<2$ เราจึงได้ว่าเมื่อ $H$ เป็นเซตของ positive rays
 $H$ จะมี VC-dimension เป็น $d_H=1$
+
+## Positive Intervals
+ในกรณีของ $H$ ที่เป็นเซตของ positive intervals นั้นจะเห็นว่าไม่มีปัญหาในการสร้าง dichotomy ให้ครบทุกแบบสำหรับตัวอย่างข้อมูลสองตัว
+โดยตัวอย่างของ hypothesis ที่ทำให้ได้ dichotomy แต่ละแบบแสดงในรูปด้านล่างนี้
+จากตรงนี้เราจึงได้ว่า VC-dimension ของ $H$ มีค่าเป็น $d_H\geq 2$
+
+<p align="center">
+<img width="400" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/positiveintervals_vc1.png">
+</p>
+
+สำหรับตัวอย่างข้อมูลสามตัว ถ้าไม่มีตัวอย่างข้อมูลที่ซ้ำกันเลย เราจะได้ว่า dichotomy ที่แสดงในรูปด้านล่างนี้ไม่สามารถสร้างได้จาก
+hypothesis ใด ๆ ใน $H$ ดังนั้นเราจึงได้ว่า $d_H<3$ ซึ่งทำให้เราสรุปได้ว่า VC-dimension ของเซตของ
+positive intervals จะมีค่าเท่ากับ 2 ซึ่งมากกว่า VC-dimension ของ positive rays นั่นแสดงให้เห็นว่า
+positive intervals นั้นมีพลังในการจำแนกข้อมูลมากกว่านั่นเอง
+
+<p align="center">
+<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/positiveintervals_vc2.png">
+</p>

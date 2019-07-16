@@ -77,4 +77,8 @@ $$
 
 นอกจากนี้ สำหรับ $d\geq 1$ ใด ๆ หาก $m=1$ เราก็จะมีจำนวน dichotomy ได้สูงสุดเท่ากับ 2 แบบเสมอ
 
-คราวนี้พิจารณาเมื่อ $m>1$ และ $d\geq 1$
+คราวนี้พิจารณาเมื่อ $m>1$ และ $d\geq 1$ สมมติว่าเราแจกแจง dichotomy ที่เป็นไปได้ทั้ง $B(m,d)$ แบบออกมาเป็นตารางต่อไปนี้
+
+<p align="center">
+<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/growth_recursion_table.png">
+</p>

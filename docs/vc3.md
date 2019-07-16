@@ -141,4 +141,4 @@ linear classifier ที่สอดคล้องกับ label ดังก�
 ----
 Prev: [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc2)
 
-Next:
+Next: [ขอบเขตของ Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc4)

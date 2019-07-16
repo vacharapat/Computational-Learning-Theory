@@ -137,3 +137,8 @@ linear classifier ที่สอดคล้องกับ label ดังก�
 
 ในกรณีทั่วไป เราสามารถแสดงให้เห็นได้ว่า VC-dimension ของ hyperplanes บน $\mathbb{R}^d$
 จะมีค่าเท่ากับ $d+1$
+
+----
+Prev: [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc2)
+
+Next:

@@ -113,4 +113,4 @@ $$
 ----
 Prev: [Dichotomy](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc1)
 
-Next:
+Next: [VC-Dimension](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc3)

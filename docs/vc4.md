@@ -80,5 +80,5 @@ $$
 คราวนี้พิจารณาเมื่อ $m>1$ และ $d\geq 1$ สมมติว่าเราแจกแจง dichotomy ที่เป็นไปได้ทั้ง $B(m,d)$ แบบออกมาเป็นตารางต่อไปนี้
 
 <p align="center">
-<img width="200" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/growth_recursion_table.png">
+<img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/growth_recursion_table.png">
 </p>

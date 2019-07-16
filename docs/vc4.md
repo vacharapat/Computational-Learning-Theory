@@ -146,3 +146,31 @@ B(m,d) &\leq B(m-1,d)+B(m-1,d-1)\\
 &=\sum_{i=0}^d{m\choose i}
 \end{split}
 $$
+
+จาก Sauer's lemma เราสามารถจำกัดขอบเขตของ $B(m,d)$ ต่อได้โดยพิจารณาเมื่อ $m\leq d$
+เราจะได้ว่า
+
+$$
+B(m,d)=2^m\leq 2^d
+$$
+
+และเมื่อ $m> d$ ซึ่งทำให้ $\frac{m}{d}>1$ จะได้ว่า
+
+$$
+\begin{split}
+B(m,d) &\leq\sum_{i=0}^d{m\choose i}\\
+&\leq\sum_{i=0}^d{m\choose i}\left(\frac{m}{d}\right)^{d-i}\\
+&\leq\sum_{i=0}^m{m\choose i}\left(\frac{m}{d}\right)^{d-i}\\
+&=\left(\frac{m}{d}\right)^d\sum_{i=0}^m{m\choose i}\left(\frac{d}{m}\right)^i\\
+&=\left(\frac{m}{d}\right)^d\left(1+\frac{d}{m}\right)^m & \text{ (จาก binomial theorem) }\\
+&\leq\left(\frac{m}{d}\right)^de^{d}\\
+&= \left(\frac{em}{d}\right)^d
+\end{split}
+$$
+
+เนื่องจาก $B(m,d)$ นั้นเป็นขอบเขตบนของ growth function $\Pi_H(m)$ เราจึงสรุปได้ว่า
+สำหรับ hypothesis space $H$ ที่มี VC-dimension เท่ากับ $d$ เราจะได้ว่า
+
+$$
+\Pi_H(m)\leq\left(\frac{em}{d}\right)^d = O(m^d)
+$$

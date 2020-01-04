@@ -22,9 +22,15 @@
 <img width="300" src="https://raw.githubusercontent.com/vacharapat/Computational-Learning-Theory/master/images/rec3.png">
 </p>
 
+จาก union bound ซึ่งกล่าวว่า
+
+$$
+\Pr[A\cup B]\leq\Pr[A]+\Pr[B]
+$$
+
 เราจะได้ว่า
 
-$$\Pr_{x\sim D}[x\in t_1\cup t_2\cup t_3\cup t_4] = \epsilon$$
+$$\Pr_{x\sim D}[x\in t_1\cup t_2\cup t_3\cup t_4] \leq \sum_{i=1}^4 \Pr_{x\sim D}[x\in t_i]= \epsilon$$
 
 สังเกตว่าหากขอบของ $h$ เข้าไปแตะภายในพื้นที่ $t_i$ ทั้งสี่ด้าน แสดงว่าโอกาสที่เราจะสุ่มหยิบข้อมูล $x$ มาแล้วทำให้ $h(x)\neq r(x)$ ซึ่งก็คือโอกาสที่สุ่มหยิบ $x$ มาอยู่ภายในรูป $r$ แต่อยู่นอก $h$ นั้นต้องมีค่าไม่เกิน $\epsilon$ นั่นหมายความว่า ถ้า $R(h)>\epsilon$ แสดงว่าจะต้องมีอย่างน้อยด้านหนึ่งที่ขอบของรูปสี่เหลี่ยม $h$ นั้นไม่ได้เข้าไปแตะภายในพื้นที่ $t_i$ (เช่นด้านซ้ายในรูปด้านบน) เราอาจกล่าวได้ว่า ถ้า $R(h)>\epsilon$ แสดงว่าจะต้องมีพื้นที่ $t_i$ อย่างน้อยด้านหนึ่งที่ $t_i\cap h=\emptyset$
 ดังนั้นเราได้ว่า

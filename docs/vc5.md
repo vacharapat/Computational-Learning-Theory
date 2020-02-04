@@ -62,3 +62,14 @@ $$
 
 เนื่องจากตัวแปรสุ่ม $\widehat{R}_{S'}(h)$ นั้นมีการกระจายตัวแบบ binomial เราจะได้ว่า
 $Var[\widehat{R}_{S'}(h)] = mr(1-r)\leq m/4$ เมื่อ $0\leq r\leq 1$
+ดังนั้น
+
+$$
+\Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq \frac{1}{\epsilon^2m}
+$$
+
+ถ้า $m\geq 2/\epsilon^2$ เราจะได้ว่า
+
+$$
+\Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq\frac{1}{2}
+$$

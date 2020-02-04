@@ -118,3 +118,5 @@ $$
 &=\Pr[\exists h\in H_{S\cup S'}: \widehat{R}_S(h)=0 \text{ และ } \widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2}]
 \end{split}
 $$
+
+สังเกตว่าในตอนนี้ปัญหาของเราอยู่ในรูปที่ hypothesis space มีขนาดจำกัดแล้ว 

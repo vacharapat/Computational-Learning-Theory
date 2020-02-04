@@ -63,7 +63,7 @@ $$
 เนื่องจากตัวแปรสุ่ม
 $$\widehat{R}_{S'}(h)$$
 นั้นมีการกระจายตัวแบบ binomial เราจะได้ว่า
-$$Var[\widehat{R}_{S'}(h)] = mr(1-r)\leq m/4$ เมื่อ $0\leq r\leq 1$$
+$Var[\widehat{R}_{S'}(h)] = mr(1-r)\leq m/4$ เมื่อ $0\leq r\leq 1$
 ดังนั้น
 
 $$

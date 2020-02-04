@@ -70,7 +70,7 @@ $$
 \Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq \frac{1}{\epsilon^2m}
 $$
 
-ถ้า $m\geq 2/\epsilon^2$ เราจะได้ว่า
+ถ้าเรากำหนดให้ $m\geq 2/\epsilon^2$ เราจะได้ว่า
 
 $$
 \Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq\frac{1}{2}

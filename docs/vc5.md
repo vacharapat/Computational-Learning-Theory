@@ -54,5 +54,8 @@ $$
 เราจะได้ว่า
 
 $$
-\Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq\Pr[|\widehat{R}_{S'}(h)- rm|\geq\frac{\epsilon m}{2}]
+\begin{split}
+\Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]&\leq\Pr[|\widehat{R}_{S'}(h)- rm|\geq\frac{\epsilon m}{2}]\\
+&\leq \frac{2Var[\widehat{R}_{S'}(h)]}{\epsilon^2m^2}
+\end{split}
 $$

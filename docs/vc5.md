@@ -75,3 +75,14 @@ $$
 $$
 \Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq\frac{1}{2}
 $$
+
+คราวนี้สังเกตว่าถ้าเราสนใจเหตุการณ์ที่มี $h\in H$ อย่างน้อยหนึ่งตัวที่ consistent กับ $S$ แต่ทำนายผลลัพธ์ใน
+$S'$ ผิดอย่างน้อย $\epsilon m/2$ ตัว เราจะได้ว่า
+
+$$
+\begin{split}
+\Pr[\exists h\in H: h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}]
+&\geq\Pr[\exists h\in H: R(h)>\epsilon, h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}] \\
+&=\Pr[\exists h\in H: R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2} | R(h)>\epsilon]
+\end{split}
+$$

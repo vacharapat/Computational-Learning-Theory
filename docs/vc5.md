@@ -115,6 +115,6 @@ hypothesis ใน $H_{S\cup S'}$ ที่ให้ผลแบบเดีย�
 $$
 \begin{split}
 \Pr[\exists h\in H:& h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2}]\\
-=\Pr[\exists h\in H_{S\cup S'}:& \widehat{R}_S(h)=0 \text{ และ } \widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2}]
+&=\Pr[\exists h\in H_{S\cup S'}:& \widehat{R}_S(h)=0 \text{ และ } \widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2}]
 \end{split}
 $$

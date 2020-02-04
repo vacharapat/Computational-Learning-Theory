@@ -81,8 +81,8 @@ $S'$ ผิดอย่างน้อย $\epsilon m/2$ ตัว เราจ�
 
 $$
 \begin{split}
-\Pr[\exists h\in H: h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}]
+\Pr[\exists h\in H:& h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}]\\
 &\geq\Pr[\exists h\in H: R(h)>\epsilon, h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}] \\
-&=\Pr[\exists h\in H: R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\Pr[\widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2} | R(h)>\epsilon]
+&=\Pr[\exists h\in H: R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\cdot\Pr[\widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2} | R(h)>\epsilon]
 \end{split}
 $$

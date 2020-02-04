@@ -93,6 +93,6 @@ $$
 $$
 \begin{split}
 \Pr[\exists h\in H:& R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\\
-&\leq 2 \Pr[\exists h\in H:& h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}]
+&\leq 2 \Pr[\exists h\in H: h \text{ consistent กับ } S \text{ และ } \widehat{R}_{S'}(h)\geq \frac{\epsilon m}{2}]
 \end{split}
 $$

@@ -47,12 +47,12 @@ $$\widehat{R}_{S'}(h)>\epsilon m/2$$
 $$\mathbb{E}[\widehat{R}_{S'}(h)] = rm > \epsilon m$$ จาก Chebyshev's inequality ที่กล่าวว่า
 สำหรับตัวแปรสุ่ม $X$ ใด ๆ
 
-\[
+$$
 \Pr[|X - \mathbb{E}[X]|\geq a]\leq \frac{Var[X]}{a^2}
-\]
+$$
 
 เราจะได้ว่า
 
-\[
+$$
 \Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]\leq\Pr[|\widehat{R}_{S'}(h)- rm|\geq\frac{\epsilon m}{2}]
-\]
+$$

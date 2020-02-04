@@ -56,6 +56,9 @@ $$
 $$
 \begin{split}
 \Pr[\widehat{R}_{S'}(h)\leq\frac{\epsilon m}{2}]&\leq\Pr[|\widehat{R}_{S'}(h)- rm|\geq\frac{\epsilon m}{2}]\\
-&\leq \frac{2Var[\widehat{R}_{S'}(h)]}{\epsilon^2m^2}
+&\leq \frac{4Var[\widehat{R}_{S'}(h)]}{\epsilon^2m^2}
 \end{split}
 $$
+
+เนื่องจากตัวแปรสุ่ม $\widehat{R}_{S'}(h)$ นั้นมีการกระจายตัวแบบ binomial เราจะได้ว่า
+$Var[\widehat{R}_{S'}(h)] = mr(1-r)\leq m/4$ เมื่อ $0\leq r\leq 1$

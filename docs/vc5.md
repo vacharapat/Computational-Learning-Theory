@@ -176,6 +176,16 @@ $$
 $$
 \begin{split}
 \Pr[\exists h\in H:& R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\\
-&\leq 2\Pi_H(2m)2^{-\epsilon m/2}
+&\leq 2\Pi_H(2m)2^{-\epsilon m/2}\\
+&\leq 2\left(\frac{2em}{d}\right)^d2^{-\epsilon m/2}
 \end{split}
 $$
+
+เมื่อเรากำหนดขอบเขตบน $2\left(\frac{2em}{d}\right)^d2^{-\epsilon m/2}=\delta$
+เราก็จะคำนวณ $\epsilon$ ซึ่งเป็นขอบเขตบนของ generalization error ได้ดังนี้
+
+$$
+R(h)\leq \frac{2}{m}\left(d\log \frac{2em}{d}+\log\frac{2}{\delta}\right)
+$$
+
+เมื่อ $\log$ มีฐานเป็น $2$

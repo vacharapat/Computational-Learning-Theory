@@ -176,6 +176,6 @@ $$
 $$
 \begin{split}
 \Pr[\exists h\in H:& R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\\
-\leq 2\Pi_H(2m)2^{-\epsilon m/2}
+&\leq 2\Pi_H(2m)2^{-\epsilon m/2}
 \end{split}
 $$

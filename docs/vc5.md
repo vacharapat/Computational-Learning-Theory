@@ -150,6 +150,6 @@ $$
 \frac{\binom{m}{l}l!(2m-l)!}{2m!}&=\frac{\binom{m}{l}l!(2m-l)!}{\binom{2m}{l}l!(2m-l)!}\\
 &=\frac{\binom{m}{l}}{\binom{2m}{l}}\\
 &=\frac{(2m-l)!}{2m!}\cdot\frac{m!}{(m-l)!}\\
-&=\Prod_{i=0}^{l-1}\frac{m-i}{2m-i}
+&=\prod_{i=0}^{l-1}\frac{m-i}{2m-i}
 \end{split}
 $$

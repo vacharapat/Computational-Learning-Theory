@@ -157,7 +157,8 @@ $$
 
 นั่นคือ สำหรับ $h\in H_{S\cup S'}$ ที่
 $$\widehat{R}_{S\cup S'}(h)=l\geq \epsilon m/2$$
-ความน่าจะเป็นที่ $\widehat{R}_S(h)=0$ และ $\widehat{R}_{S'}(h)=l$ จะมีค่าไม่เกิน $2^{-\epsilon m/2}$
+ความน่าจะเป็นที่
+$$\widehat{R}_S(h)=0$$ และ $$\widehat{R}_{S'}(h)=l$$ จะมีค่าไม่เกิน $2^{-\epsilon m/2}$
 และเนื่องจากจำนวน $h\in H_{S\cup S'}$ ที่
 $$\widehat{R}_{S\cup S'}(h)=l\geq \epsilon m/2$$
 นี้จะมีจำนวนไม่เกิน $\Pi_H(2m)$

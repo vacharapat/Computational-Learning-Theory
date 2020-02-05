@@ -147,6 +147,8 @@ $$
 $$
 \begin{split}
 \frac{{m\choose l}l!(2m-l)!}{2m!}&=\frac{{m\choose l}l!(2m-l)!}{{2m\choose l}l!(2m-l)!}\\
-&=\frac{{m\choose l}}{{2m\choose l}}
+&=\frac{{m\choose l}}{{2m\choose l}}\\
+&=\frac{(2m-l)!}{2m!}\cdot\frac{m!}{(m-l)!}\\
+&=\Prod_{i=0}^{l-1}\frac{m-i}{2m-i}
 \end{split}
 $$

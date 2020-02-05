@@ -154,3 +154,27 @@ $$
 &\leq\frac{1}{2^{\epsilon m/2}}
 \end{split}
 $$
+
+นั่นคือ สำหรับ $h\in H_{S\cup S'}$ ที่
+$$\widehat{R}_{S\cup S'}(h)=l\geq \epsilon m/2$$
+ความน่าจะเป็นที่ $\widehat{R}_S(h)=0$ และ $widehat{R}_{S'}(h)=l$ จะมีค่าไม่เกิน $2^{-\epsilon m/2}$
+และเนื่องจากจำนวน $h\in H_{S\cup S'}$ ที่
+$$\widehat{R}_{S\cup S'}(h)=l\geq \epsilon m/2$$
+นี้จะมีจำนวนไม่เกิน $\Pi_H(2m)$
+เราจึงได้ว่า
+
+$$
+\begin{split}
+\Pr[\exists h\in H_{S\cup S'}:& \widehat{R}_S(h)=0 \text{ และ } \widehat{R}_{S'}(h)\geq\frac{\epsilon m}{2}]\\
+&\leq \Pi_H(2m)2^{-\epsilon m/2}
+\end{split}
+$$
+
+และได้ว่า
+
+$$
+\begin{split}
+\Pr[\exists h\in H:& R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\\
+\leq 2\Pi_H(2m)2^{-\epsilon m/2}
+\end{split}
+$$

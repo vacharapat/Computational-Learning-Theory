@@ -2,9 +2,8 @@
 # Sample complexity
 จากหัวข้อที่แล้ว เราได้ทำการวิเคราะห์ generalization bound ของ risk ของ hypothesis ที่ได้จากการเรียนรู้โดยขึ้นอยู่กับจำนวนตัวอย่างข้อมูลที่ใช้เทรนและ VC dimension กันมาแล้ว ในหัวข้อนี้เราจะมาวิเคราะห์ในมุมของ sample complexity กันดูบ้างว่าหากเราต้องการได้ hypothesis ที่มี risk แตกต่างจาก hypothesis ที่ดีที่สุดไม่เกิน $\epsilon$ ด้วยความน่าจะเป็นสูง เราจะต้องการตัวอย่างข้อมูลใน training set มากแค่ไหน
 
-## consistent hypothesis
 ในกรณีที่เราสามารถหา hypothesis ที่ consistent กับตัวอย่างข้อมูล $$S=\{(x_1,y_1),\dots,(x_m,y_m)\}$$ ได้เสมอ
-จากการวิเคราะห์ generalization bound ในหัวข้อก่อน เราจะได้ว่า 
+จากการวิเคราะห์ generalization bound ในหัวข้อก่อน เราจะได้ว่า
 
 $$
 \Pr[\exists h\in H: R(h)>\epsilon \text{ และ } h \text{ consistent กับ } S]\leq 2\left(\frac{2em}{d}\right)^d2^{-\epsilon m/2}
@@ -52,7 +51,7 @@ $$
 และที่จุดนี้ ค่าของ $y_1$ และ $y_2$ ต้องเท่ากันด้วย เราจึงได้ว่า
 
 $$
-\log\alpha = \frac{1}{\alpha\ln2}\alpha + b 
+\log\alpha = \frac{1}{\alpha\ln2}\alpha + b
 $$
 
 ดังนั้น

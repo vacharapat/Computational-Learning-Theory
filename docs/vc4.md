@@ -182,4 +182,4 @@ $H$ มีขนาดจำกัด เราจำเป็นต้องท
 ----
 Prev: [VC-Dimension](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc3)
 
-Next:
+Next: [VC Generalization](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc5)

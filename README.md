@@ -24,3 +24,5 @@
 1. [Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc2)
 1. [VC-Dimension](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc3)
 1. [ขอบเขตของ Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc4)
+1. [VC Generalization](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc5)
+1. [Sample Complexity](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc6)

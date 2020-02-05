@@ -1,5 +1,5 @@
 {% include lib/mathjax.html %}
-# VC Generalization Bound สำหรับ Consistent Hypothesis
+# VC Generalization
 
 จากหัวข้อที่แล้ว เราเห็นแล้วว่าอัตราการโตของ $\Pi_H(m)$ นั้นเป็น polynomial บน $m$
 ซึ่งทำให้เรามีความหวังที่จะนำค่า $\Pi_H(m)$ มาใช้เป็นเครื่องแสดงความซับซ้อนของ hypothesis space $H$
@@ -189,3 +189,8 @@ R(h)\leq \frac{2}{m}\left(d\log \frac{2em}{d}+\log\frac{2}{\delta}\right)
 $$
 
 เมื่อ $\log$ มีฐานเป็น $2$
+
+----
+Prev: [ขอบเขตของ Growth Function](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc4)
+
+Next: [Sample Complexity](https://vacharapat.github.io/Computational-Learning-Theory/docs/vc6)
